@@ -25,7 +25,9 @@ export default function AvatarDemo() {
 
       {/* Basic Usage */}
       <section className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6">استفاده پایه (Basic Usage)</h2>
+        <h2 className="text-2xl font-semibold mb-6">
+          استفاده پایه (Basic Usage)
+        </h2>
         <p className="text-muted-foreground mb-4">
           آواتار شامل سه بخش است: Avatar (کانتینر اصلی)، AvatarImage (تصویر)، و
           AvatarFallback (محتوای پشتیبان)
@@ -37,8 +39,8 @@ export default function AvatarDemo() {
               <AvatarFallback>CN</AvatarFallback>
             </Avatar>
             <div>
-              <p className="font-medium">سایدچن (shadcn)</p>
-              <p className="text-sm text-muted-foreground">@shadcn</p>
+              <p className="font-medium">امیررضا محمدی</p>
+              <p className="text-sm text-muted-foreground">برنامه نویس</p>
             </div>
           </div>
         </div>
@@ -299,7 +301,9 @@ export default function AvatarDemo() {
                     </Avatar>
                     <div>
                       <p className="font-medium text-sm">سارا احمدی</p>
-                      <p className="text-xs text-muted-foreground">طراح UI/UX</p>
+                      <p className="text-xs text-muted-foreground">
+                        طراح UI/UX
+                      </p>
                     </div>
                   </div>
                   <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary">
@@ -493,8 +497,12 @@ export default function AvatarDemo() {
               متن جایگزین (Alt Text)
             </h3>
             <p>
-              همیشه برای <code className="text-sm bg-muted px-2 py-1 rounded">AvatarImage</code>{" "}
-              یک prop <code className="text-sm bg-muted px-2 py-1 rounded">alt</code>{" "}
+              همیشه برای{" "}
+              <code className="text-sm bg-muted px-2 py-1 rounded">
+                AvatarImage
+              </code>{" "}
+              یک prop{" "}
+              <code className="text-sm bg-muted px-2 py-1 rounded">alt</code>{" "}
               مناسب تعریف کنید تا کاربران اسکرین ریدر بتوانند محتوا را درک کنند
             </p>
           </div>
@@ -504,14 +512,14 @@ export default function AvatarDemo() {
             </h3>
             <p>
               از حروف اول نام کاربر یا آیکون مناسب در{" "}
-              <code className="text-sm bg-muted px-2 py-1 rounded">AvatarFallback</code>{" "}
+              <code className="text-sm bg-muted px-2 py-1 rounded">
+                AvatarFallback
+              </code>{" "}
               استفاده کنید تا کاربر بتواند هویت را تشخیص دهد
             </p>
           </div>
           <div className="p-4 rounded-lg bg-card border border-border">
-            <h3 className="font-semibold text-foreground mb-2">
-              کنتراست رنگ
-            </h3>
+            <h3 className="font-semibold text-foreground mb-2">کنتراست رنگ</h3>
             <p>
               مطمئن شوید که رنگ محتوای پشتیبان با پس‌زمینه کنتراست کافی دارد تا
               خوانایی خوبی داشته باشد
