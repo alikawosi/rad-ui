@@ -4,4 +4,6 @@ export type { ButtonProps } from "./button";
 export { Separator } from "./separator";
 export { Avatar, AvatarImage, AvatarFallback } from "./avatar";
 export { AspectRatio } from "./aspect-ratio";
+export { Kbd, KbdGroup } from "./kbd";
+export type { KbdProps, KbdGroupProps } from "./kbd";
 
