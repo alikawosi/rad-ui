@@ -22,18 +22,41 @@ export default function Home() {
 
 ## Tailwind Setup
 
-To use the components, you need to add the package's paths to your `tailwind.config.js` `content` array. This ensures that Tailwind generates the necessary CSS classes for the components.
+To use the components, you need to configure Tailwind CSS to scan the package's files and use the custom plugin.
+
+1. Add the package's paths to your `tailwind.config.js` `content` array so Tailwind scans the library.
+2. Add the `raduiPlugin` to your `plugins` array to include the custom theme and variables.
 
 ```js
 // tailwind.config.js
+const { raduiPlugin } = require("@quarklab/rad-ui");
+
 module.exports = {
   content: [
     // ... your other content paths
     "./node_modules/@quarklab/rad-ui/dist/**/*.js",
   ],
-  // ... rest of your config
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    raduiPlugin,
+  ],
 };
 ```
 
-Make sure you also have the necessary theme variables (colors, border radius, etc.) defined in your CSS to match the design system.
+If you are using TypeScript (`tailwind.config.ts`):
 
+```ts
+import { raduiPlugin } from "@quarklab/rad-ui";
+
+export default {
+  content: [
+    // ...
+    "./node_modules/@quarklab/rad-ui/dist/**/*.js",
+  ],
+  plugins: [
+    raduiPlugin,
+  ],
+}
+```

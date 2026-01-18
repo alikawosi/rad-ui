@@ -14,4 +14,4 @@ export { Label } from "./label";
 export { Skeleton } from "./skeleton";
 export { Spinner, spinnerVariants } from "./spinner";
 export type { SpinnerProps } from "./spinner";
-
+export * from "./plugin";
