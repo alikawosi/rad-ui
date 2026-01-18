@@ -130,3 +130,5 @@ storybook-static/
 # Build outputs
 *.tgz
 *.tar.gz
+#npm
+.npmrc

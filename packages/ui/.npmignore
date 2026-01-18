@@ -1,0 +1,8 @@
+src
+tsconfig.json
+tailwind.config.ts
+postcss.config.js
+node_modules
+.turbo
+.DS_Store
+

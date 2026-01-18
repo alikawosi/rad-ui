@@ -1,3 +1,5 @@
+import "./styles.css";
+
 export { cn } from "./lib/utils";
 export { Button, buttonVariants } from "./button";
 export type { ButtonProps } from "./button";
