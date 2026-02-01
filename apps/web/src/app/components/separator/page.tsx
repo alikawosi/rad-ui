@@ -18,7 +18,7 @@ export default function SeparatorDemo() {
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`npm install @rad-ui/ui`}</code>
+            <code>{`npm install @quarklab/rad-ui`}</code>
           </pre>
         </div>
       </section>
@@ -289,7 +289,7 @@ export default function SeparatorDemo() {
             <h3 className="font-medium mb-3">افقی (Horizontal)</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Separator } from "@rad-ui/ui";
+                <code>{`import { Separator } from "@quarklab/rad-ui";
 
 <div>
   <div>بخش اول</div>
@@ -304,7 +304,7 @@ export default function SeparatorDemo() {
             <h3 className="font-medium mb-3">عمودی (Vertical)</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Separator } from "@rad-ui/ui";
+                <code>{`import { Separator } from "@quarklab/rad-ui";
 
 <div className="flex items-center gap-4">
   <span>خانه</span>
