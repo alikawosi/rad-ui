@@ -19,7 +19,7 @@ export default function KbdDemo() {
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`npm install @rad-ui/ui`}</code>
+            <code>{`npm install @quarklab/rad-ui`}</code>
           </pre>
         </div>
       </section>
@@ -564,7 +564,7 @@ export default function KbdDemo() {
             <h3 className="font-medium mb-3">کلید تکی</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Kbd } from "@rad-ui/ui";
+                <code>{`import { Kbd } from "@quarklab/rad-ui";
 
 <Kbd>Ctrl</Kbd>`}</code>
               </pre>
@@ -575,7 +575,7 @@ export default function KbdDemo() {
             <h3 className="font-medium mb-3">میانبر صفحه‌کلید</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Kbd, KbdGroup } from "@rad-ui/ui";
+                <code>{`import { Kbd, KbdGroup } from "@quarklab/rad-ui";
 
 <KbdGroup>
   <Kbd>Ctrl</Kbd>
@@ -590,7 +590,7 @@ export default function KbdDemo() {
             <h3 className="font-medium mb-3">با دکمه</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Button, Kbd, KbdGroup } from "@rad-ui/ui";
+                <code>{`import { Button, Kbd, KbdGroup } from "@quarklab/rad-ui";
 
 <Button variant="outline" className="gap-2">
   جستجو

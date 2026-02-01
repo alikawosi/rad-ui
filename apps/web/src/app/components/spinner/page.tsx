@@ -26,7 +26,7 @@ export default function SpinnerDemo() {
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`npm install @rad-ui/ui`}</code>
+            <code>{`npm install @quarklab/rad-ui`}</code>
           </pre>
         </div>
       </section>
@@ -474,7 +474,7 @@ export default function SpinnerDemo() {
             <h3 className="font-medium mb-3">پایه (Basic)</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Spinner } from "@rad-ui/ui";
+                <code>{`import { Spinner } from "@quarklab/rad-ui";
 
 <Spinner />`}</code>
               </pre>
@@ -508,7 +508,7 @@ export default function SpinnerDemo() {
             <h3 className="font-medium mb-3">در دکمه</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Button, Spinner } from "@rad-ui/ui";
+                <code>{`import { Button, Spinner } from "@quarklab/rad-ui";
 
 <Button disabled>
   <Spinner size="sm" className="me-2" />

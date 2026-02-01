@@ -24,7 +24,7 @@ export default function SliderDemo() {
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`npm install @rad-ui/ui`}</code>
+            <code>{`npm install @quarklab/rad-ui`}</code>
           </pre>
         </div>
       </section>
@@ -563,7 +563,7 @@ export default function SliderDemo() {
         <h2 className="text-2xl font-semibold mb-6">نحوه استفاده (Usage)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`import { Slider, Label } from "@rad-ui/ui";
+            <code>{`import { Slider, Label } from "@quarklab/rad-ui";
 import { useState } from "react";
 
 export default function Settings() {

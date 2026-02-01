@@ -48,7 +48,7 @@ export default function CheckboxPage() {
           </div>
           <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
             <pre className="text-sm">
-              <code>{`import { Checkbox, Label } from "@rad-ui/ui";
+              <code>{`import { Checkbox, Label } from "@quarklab/rad-ui";
 
 export function CheckboxDemo() {
   return (
@@ -569,7 +569,7 @@ export function CheckboxDemo() {
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm overflow-x-auto">
             <code>{`import { useState } from "react";
-import { Checkbox, Label } from "@rad-ui/ui";
+import { Checkbox, Label } from "@quarklab/rad-ui";
 
 export default function MyComponent() {
   const [checked, setChecked] = useState(false);

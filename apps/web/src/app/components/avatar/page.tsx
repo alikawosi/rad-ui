@@ -18,7 +18,7 @@ export default function AvatarDemo() {
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
         <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
           <pre className="text-sm">
-            <code>{`npm install @rad-ui/ui`}</code>
+            <code>{`npm install @quarklab/rad-ui`}</code>
           </pre>
         </div>
       </section>
@@ -576,7 +576,7 @@ export default function AvatarDemo() {
             <h3 className="font-medium mb-3">پایه (Basic)</h3>
             <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
               <pre className="text-sm">
-                <code>{`import { Avatar, AvatarFallback, AvatarImage } from "@rad-ui/ui";
+                <code>{`import { Avatar, AvatarFallback, AvatarImage } from "@quarklab/rad-ui";
 
 <Avatar>
   <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
