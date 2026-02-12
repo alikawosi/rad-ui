@@ -23,6 +23,7 @@ import {
   SlidersHorizontal,
   CheckSquare,
   CircleDot,
+  ChevronDown,
 } from "lucide-react";
 import { cn } from "@rad-ui/ui";
 
@@ -60,6 +61,12 @@ const componentCategories = [
         nameFA: "ورودی متن",
         href: "/components/input",
         icon: TextCursorInput,
+      },
+      {
+        name: "Native Select",
+        nameFA: "انتخابگر بومی",
+        href: "/components/native-select",
+        icon: ChevronDown,
       },
       {
         name: "Textarea",

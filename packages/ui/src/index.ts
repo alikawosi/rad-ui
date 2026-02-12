@@ -24,3 +24,14 @@ export type { CheckboxProps } from "./checkbox";
 export { RadioGroup, RadioGroupItem } from "./radio-group";
 export { Input, inputVariants } from "./input";
 export type { InputProps } from "./input";
+export {
+  NativeSelect,
+  NativeSelectOption,
+  NativeSelectOptGroup,
+  nativeSelectVariants,
+} from "./native-select";
+export type {
+  NativeSelectProps,
+  NativeSelectOptionProps,
+  NativeSelectOptGroupProps,
+} from "./native-select";
