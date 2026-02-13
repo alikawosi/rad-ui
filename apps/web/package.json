@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "registry:build": "tsx scripts/build-registry.ts",
+    "registry:build": "rad-ui build registry.json -o public/r",
     "prebuild": "npm run registry:build",
     "dev": "next dev",
     "build": "next build",

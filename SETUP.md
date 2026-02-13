@@ -16,8 +16,7 @@ rad-ui/
 │   │   │   │   └── lib/
 │   │   │   │       └── utils.ts     # cn() helper
 │   │   │   └── mobile/              # Placeholder for future mobile components
-│   │   ├── scripts/
-│   │   │   └── build-registry.ts    # Generates public/r/*.json from source
+│   │   ├── registry.json             # Component definitions (single source of truth)
 │   │   ├── src/
 │   │   │   ├── app/
 │   │   │   │   ├── components/*/    # Doc page for each component
@@ -44,9 +43,6 @@ rad-ui/
 │   │   │       ├── fetch-registry.ts # HTTP client for registry JSON
 │   │   │       ├── transformers.ts   # Import path rewriting
 │   │   │       └── logger.ts
-│   │   ├── templates/web/           # Bundled fallback templates (synced from registry)
-│   │   ├── scripts/
-│   │   │   └── sync-templates.js    # Copies registry -> templates at build time
 │   │   ├── tsup.config.ts
 │   │   └── package.json             # Published as @quarklab/rad-ui
 │   └── config/                      # Shared ESLint and TypeScript configs
@@ -80,17 +76,17 @@ npm run build
 
 This runs the full pipeline:
 
-- `apps/web`: registry:build (generates JSON) -> next build (compiles site)
-- `packages/cli`: sync-templates -> tsup (bundles CLI)
+- `apps/web`: rad-ui build (generates registry JSON) -> next build (compiles site)
+- `packages/cli`: tsup (bundles CLI)
 
 ## Architecture
 
 ### Single Source of Truth
 
-All component source code lives in `apps/web/registry/web/ui/`. This is the only place components are authored. Two consumers read from here:
+All component source code lives in `apps/web/registry/web/ui/`. Component metadata is defined in `apps/web/registry.json`. Two consumers read from here:
 
 1. **Doc site** (`apps/web/src/`) — imports components for live demos
-2. **Build script** (`apps/web/scripts/build-registry.ts`) — generates JSON payloads
+2. **`rad-ui build`** — reads `registry.json` and generates JSON payloads
 
 ### Registry Build
 
@@ -124,10 +120,9 @@ When deployed, these are served as static files at `quarklab.dev/r/button.json`.
 1. Reads `rad-ui.json` for config
 2. Resolves internal dependencies (e.g., `field` pulls in `label` + `separator`)
 3. Fetches component via HTTP from `quarklab.dev/r/button.json`
-4. Falls back to bundled templates if offline
-5. Transforms imports (`../lib/utils` -> user's configured alias)
-6. Writes files to user's components directory
-7. Installs npm dependencies
+4. Transforms imports (`../lib/utils` -> user's configured alias)
+5. Writes files to user's components directory
+6. Installs npm dependencies
 
 ### Tailwind v3 vs v4
 
@@ -165,7 +160,7 @@ Five Persian-inspired color themes, each with light and dark mode:
 
 ```bash
 cd packages/cli
-npm run build        # sync templates + tsup bundle
+npm run build        # tsup bundle
 npm publish --access public --otp=YOUR_CODE
 ```
 

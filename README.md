@@ -30,7 +30,7 @@ rad-ui/
 │   ├── web/                    # Next.js docs site (quarklab.dev)
 │   │   ├── registry/web/ui/    # Component source (single source of truth)
 │   │   ├── registry/web/lib/   # Shared utils (cn helper)
-│   │   ├── scripts/            # Registry build script
+│   │   ├── registry.json       # Component definitions for rad-ui build
 │   │   └── src/app/            # Doc pages for each component
 │   └── mobile/                 # Expo React Native app (coming soon)
 ├── packages/
@@ -57,8 +57,8 @@ npm run build
 
 1. **Source of truth** — All 21 components live in `apps/web/registry/web/ui/`
 2. **Doc site** — `apps/web/src/` imports from the registry to render live demos
-3. **Registry build** — A prebuild script generates JSON files at `public/r/*.json`
-4. **CLI** — `npx @quarklab/rad-ui add button` fetches from `quarklab.dev/r/button.json`, falls back to bundled templates if offline
+3. **Registry build** — `rad-ui build` reads `registry.json` and generates JSON files at `public/r/*.json`
+4. **CLI** — `npx @quarklab/rad-ui add button` fetches from `quarklab.dev/r/button.json`
 5. **User's project** — Components are copied as `.tsx` files with imports transformed to match the user's aliases
 
 ## Tech Stack

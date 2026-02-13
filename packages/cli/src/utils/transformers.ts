@@ -17,7 +17,7 @@ export function transformImports(source: string, config: RadUIConfig): string {
     `from "${utilsAlias}"`
   );
 
-  // Also handle the old format in case bundled templates use it
+  // Also handle the old format (./lib/utils) for compatibility
   result = result.replace(
     /from\s+["']\.\/lib\/utils["']/g,
     `from "${utilsAlias}"`
