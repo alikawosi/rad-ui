@@ -1,6 +1,7 @@
 import { Command } from "commander";
 import { initCommand } from "./commands/init";
 import { addCommand } from "./commands/add";
+import { buildCommand } from "./commands/build";
 
 const program = new Command();
 
@@ -25,5 +26,13 @@ program
   .option("-o, --overwrite", "Overwrite existing components")
   .option("-p, --path <path>", "Custom path for components")
   .action(addCommand);
+
+program
+  .command("build")
+  .description("Build registry JSON from registry.json")
+  .argument("[registry]", "Path to registry.json", "./registry.json")
+  .option("-o, --output <dir>", "Output directory", "./public/r")
+  .option("--cwd <path>", "Working directory")
+  .action(buildCommand);
 
 program.parse();

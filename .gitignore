@@ -117,6 +117,7 @@ Desktop.ini
 *.iws
 *.sublime-project
 *.sublime-workspace
+.cursor
 
 # Temporary files
 *.tmp
