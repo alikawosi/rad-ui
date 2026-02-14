@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { cn } from "@/registry/web/ui";
 import { ThemeSwitcher } from "./theme-switcher";
+import { GithubButton } from "./github-button";
 
 const navLinks = [
   { href: "/", label: "صفحه اصلی" },
@@ -23,14 +24,20 @@ export function Navbar() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex-row-reverse flex items-center justify-between h-16">
           {/* Logo - Right side (RTL) */}
-          <Link
-            href="/"
-            className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
-          >
-            <div className="text-2xl font-bold bg-gradient-to-l from-primary to-primary/60 bg-clip-text text-transparent">
-              راد
+          <div className="flex flex-row-reverse items-center gap-2">
+            {/* <Link
+              href="/"
+              className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
+            >
+              <div className="text-2xl font-bold bg-gradient-to-l from-primary to-primary/60 bg-clip-text text-transparent">
+                راد
+              </div>
+            </Link> */}
+            <div className="pt-2 gap-4 flex flex-row-reverse items-center justify-between">
+              <GithubButton />
+              <ThemeSwitcher />
             </div>
-          </Link>
+          </div>
 
           {/* Desktop Navigation - Left side (RTL) */}
           <div className="hidden md:flex items-center gap-6">
@@ -43,9 +50,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-
-            {/* Theme Switcher */}
-            <ThemeSwitcher />
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,9 +86,6 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                <div className="pt-2">
-                  <ThemeSwitcher />
-                </div>
               </div>
             </motion.div>
           )}
