@@ -234,7 +234,7 @@ export const componentCategories: ComponentCategory[] = [
       },
       {
         name: "Sheet",
-        nameFA: "شیت",
+        nameFA: "برگه",
         href: "/components/sheet",
         icon: PanelLeft,
         description: "پنل کشویی از لبه صفحه",

@@ -33,17 +33,17 @@ export function SheetDemo() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline">باز کردن شیت</Button>
+        <Button variant="outline">باز کردن برگه</Button>
       </SheetTrigger>
       <SheetContent>
         <SheetHeader>
-          <SheetTitle>عنوان شیت</SheetTitle>
+          <SheetTitle>عنوان برگه</SheetTitle>
           <SheetDescription>
-            این یک توضیح کوتاه درباره محتوای شیت است
+            این یک توضیح کوتاه درباره محتوای برگه است
           </SheetDescription>
         </SheetHeader>
         <div className="py-4">
-          <p>محتوای اصلی شیت</p>
+          <p>محتوای اصلی برگه</p>
         </div>
       </SheetContent>
     </Sheet>
@@ -75,10 +75,10 @@ export function SheetSide() {
           </SheetTrigger>
           <SheetContent side={side}>
             <SheetHeader>
-              <SheetTitle>شیت از سمت {label}</SheetTitle>
+              <SheetTitle>برگه از سمت {label}</SheetTitle>
             </SheetHeader>
             <div className="py-4">
-              <p>این شیت از سمت {label} باز می‌شود</p>
+              <p>این برگه از سمت {label} باز می‌شود</p>
             </div>
           </SheetContent>
         </Sheet>
@@ -119,7 +119,7 @@ export function SheetSide() {
   <SheetHeader>
     <SheetTitle>بدون دکمه بستن</SheetTitle>
     <SheetDescription>
-      این شیت دکمه X در گوشه بالا ندارد
+      این برگه دکمه X در گوشه بالا ندارد
     </SheetDescription>
   </SheetHeader>
   <SheetFooter>
@@ -132,13 +132,13 @@ export function SheetSide() {
 
 <Sheet open={open} onOpenChange={setOpen}>
   <SheetTrigger asChild>
-    <Button variant="outline">شیت کنترل‌شده</Button>
+    <Button variant="outline">برگه کنترل‌شده</Button>
   </SheetTrigger>
   <SheetContent>
     <SheetHeader>
-      <SheetTitle>شیت کنترل‌شده</SheetTitle>
+      <SheetTitle>برگه کنترل‌شده</SheetTitle>
       <SheetDescription>
-        این شیت با استفاده از state کنترل می‌شود
+        این برگه با استفاده از state کنترل می‌شود
       </SheetDescription>
     </SheetHeader>
     <SheetFooter>
@@ -324,9 +324,9 @@ export default function SheetPage() {
     <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-5xl">
       {/* Header */}
       <div className="mb-12">
-        <h1 className="text-4xl font-bold mb-4">شیت (Sheet)</h1>
+        <h1 className="text-4xl font-bold mb-4">برگه (Sheet)</h1>
         <p className="text-lg text-muted-foreground">
-          کامپوننت شیت یک پنل کشویی است که از لبه‌های صفحه (بالا، راست، پایین، چپ)
+          کامپوننت برگه یک پنل کشویی است که از لبه‌های صفحه (بالا، راست، پایین، چپ)
           باز می‌شود و برای نمایش محتوای تکمیلی استفاده می‌شود
         </p>
       </div>
@@ -374,24 +374,24 @@ export default function SheetPage() {
             استفاده پایه (Basic Usage)
           </h3>
           <p className="text-sm text-muted-foreground mb-4">
-            ساده‌ترین حالت استفاده از شیت با عنوان و توضیحات
+            ساده‌ترین حالت استفاده از برگه با عنوان و توضیحات
           </p>
 
           <div className="p-8 rounded-t-lg border border-border bg-card flex items-center justify-center">
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="outline">باز کردن شیت</Button>
+                <Button variant="outline">باز کردن برگه</Button>
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle>عنوان شیت</SheetTitle>
+                  <SheetTitle>عنوان برگه</SheetTitle>
                   <SheetDescription>
-                    این یک توضیح کوتاه درباره محتوای شیت است
+                    این یک توضیح کوتاه درباره محتوای برگه است
                   </SheetDescription>
                 </SheetHeader>
                 <div className="py-4">
                   <p className="text-muted-foreground">
-                    محتوای اصلی شیت در اینجا قرار می‌گیرد
+                    محتوای اصلی برگه در اینجا قرار می‌گیرد
                   </p>
                 </div>
               </SheetContent>
@@ -407,7 +407,7 @@ export default function SheetPage() {
             جهت‌های مختلف (Side Variants)
           </h3>
           <p className="text-sm text-muted-foreground mb-4">
-            از پراپ side برای تعیین جهت باز شدن شیت استفاده کنید. مقادیر مجاز:
+            از پراپ side برای تعیین جهت باز شدن برگه استفاده کنید. مقادیر مجاز:
             top، right، bottom، left
           </p>
 
@@ -427,14 +427,14 @@ export default function SheetPage() {
                   </SheetTrigger>
                   <SheetContent side={side}>
                     <SheetHeader>
-                      <SheetTitle>شیت از سمت {label}</SheetTitle>
+                      <SheetTitle>برگه از سمت {label}</SheetTitle>
                       <SheetDescription>
-                        این شیت از سمت {label} باز می‌شود
+                        این برگه از سمت {label} باز می‌شود
                       </SheetDescription>
                     </SheetHeader>
                     <div className="py-4">
                       <p className="text-muted-foreground">
-                        محتوای شیت در اینجا قرار می‌گیرد
+                        محتوای برگه در اینجا قرار می‌گیرد
                       </p>
                     </div>
                   </SheetContent>
@@ -450,7 +450,7 @@ export default function SheetPage() {
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-2">با فرم (With Form)</h3>
           <p className="text-sm text-muted-foreground mb-4">
-            شیت با فرم ورودی برای ویرایش اطلاعات
+            برگه با فرم ورودی برای ویرایش اطلاعات
           </p>
 
           <div className="p-8 rounded-t-lg border border-border bg-card flex items-center justify-center">
@@ -494,7 +494,7 @@ export default function SheetPage() {
             بدون دکمه بستن (No Close Button)
           </h3>
           <p className="text-sm text-muted-foreground mb-4">
-            مخفی کردن دکمه X در گوشه بالای شیت با showCloseButton=false
+            مخفی کردن دکمه X در گوشه بالای برگه با showCloseButton=false
           </p>
 
           <div className="p-8 rounded-t-lg border border-border bg-card flex items-center justify-center">
@@ -506,7 +506,7 @@ export default function SheetPage() {
                 <SheetHeader>
                   <SheetTitle>بدون دکمه بستن</SheetTitle>
                   <SheetDescription>
-                    این شیت دکمه X در گوشه بالا ندارد. برای بستن از دکمه
+                    این برگه دکمه X در گوشه بالا ندارد. برای بستن از دکمه
                     پایین استفاده کنید
                   </SheetDescription>
                 </SheetHeader>
@@ -526,19 +526,19 @@ export default function SheetPage() {
         <div className="mb-8">
           <h3 className="text-lg font-semibold mb-2">کنترل شده (Controlled)</h3>
           <p className="text-sm text-muted-foreground mb-4">
-            کنترل وضعیت باز/بسته شیت با استفاده از state
+            کنترل وضعیت باز/بسته برگه با استفاده از state
           </p>
 
           <div className="p-8 rounded-t-lg border border-border bg-card flex flex-col items-center justify-center gap-4">
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
-                <Button variant="outline">شیت کنترل‌شده</Button>
+                <Button variant="outline">برگه کنترل‌شده</Button>
               </SheetTrigger>
               <SheetContent>
                 <SheetHeader>
-                  <SheetTitle>شیت کنترل‌شده</SheetTitle>
+                  <SheetTitle>برگه کنترل‌شده</SheetTitle>
                   <SheetDescription>
-                    این شیت با استفاده از state کنترل می‌شود
+                    این برگه با استفاده از state کنترل می‌شود
                   </SheetDescription>
                 </SheetHeader>
                 <SheetFooter>
@@ -547,7 +547,7 @@ export default function SheetPage() {
               </SheetContent>
             </Sheet>
             <p className="text-sm text-muted-foreground">
-              وضعیت شیت: {open ? "باز" : "بسته"}
+              وضعیت برگه: {open ? "باز" : "بسته"}
             </p>
           </div>
 
@@ -560,7 +560,7 @@ export default function SheetPage() {
             محتوای قابل اسکرول (Scrollable Content)
           </h3>
           <p className="text-sm text-muted-foreground mb-4">
-            شیت با محتوای طولانی که قابل اسکرول است
+            برگه با محتوای طولانی که قابل اسکرول است
           </p>
 
           <div className="p-8 rounded-t-lg border border-border bg-card flex items-center justify-center">
@@ -572,7 +572,7 @@ export default function SheetPage() {
                 <SheetHeader>
                   <SheetTitle>محتوای قابل اسکرول</SheetTitle>
                   <SheetDescription>
-                    این شیت محتوای طولانی دارد که قابل اسکرول است
+                    این برگه محتوای طولانی دارد که قابل اسکرول است
                   </SheetDescription>
                 </SheetHeader>
                 <div className="flex-1 overflow-y-auto py-4">
@@ -706,7 +706,7 @@ export default function SheetPage() {
                   <td className="p-4" dir="ltr">
                     <code>&quot;right&quot;</code>
                   </td>
-                  <td className="p-4">جهت باز شدن شیت</td>
+                  <td className="p-4">جهت باز شدن برگه</td>
                 </tr>
                 <tr className="border-b border-border">
                   <td className="p-4" dir="ltr">
@@ -742,7 +742,7 @@ export default function SheetPage() {
                   <td className="p-4" dir="ltr">
                     <code>undefined</code>
                   </td>
-                  <td className="p-4">هندلر کلیک خارج از شیت</td>
+                  <td className="p-4">هندلر کلیک خارج از برگه</td>
                 </tr>
               </tbody>
             </table>
@@ -765,11 +765,11 @@ export default function SheetPage() {
                 <code className="text-sm bg-muted px-2 py-1 rounded">
                   Escape
                 </code>{" "}
-                - بستن شیت
+                - بستن برگه
               </li>
               <li>
                 <code className="text-sm bg-muted px-2 py-1 rounded">Tab</code>{" "}
-                - حرکت بین المان‌های قابل فوکوس داخل شیت
+                - حرکت بین المان‌های قابل فوکوس داخل برگه
               </li>
               <li>
                 <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -784,8 +784,8 @@ export default function SheetPage() {
               تله فوکوس (Focus Trap)
             </h3>
             <p>
-              وقتی شیت باز است، فوکوس در داخل آن محبوس می‌شود و کاربر
-              نمی‌تواند با Tab به خارج از شیت برود
+              وقتی برگه باز است، فوکوس در داخل آن محبوس می‌شود و کاربر
+              نمی‌تواند با Tab به خارج از برگه برود
             </p>
           </div>
           <div className="p-4 rounded-lg bg-card border border-border">
@@ -793,14 +793,14 @@ export default function SheetPage() {
               بازگشت فوکوس (Focus Return)
             </h3>
             <p>
-              پس از بستن شیت، فوکوس به المانی که شیت را باز کرده بود
+              پس از بستن برگه، فوکوس به المانی که برگه را باز کرده بود
               برمی‌گردد
             </p>
           </div>
           <div className="p-4 rounded-lg bg-card border border-border">
             <h3 className="font-semibold text-foreground mb-2">نقش‌های ARIA</h3>
             <p>
-              شیت از{" "}
+              برگه از{" "}
               <code className="text-sm bg-muted px-2 py-1 rounded">
                 role=&quot;dialog&quot;
               </code>{" "}
@@ -824,7 +824,7 @@ export default function SheetPage() {
             <h3 className="font-semibold mb-3">عنوان واضح (Clear Title)</h3>
             <p className="text-muted-foreground">
               همیشه از SheetTitle استفاده کنید تا کاربران صفحه‌خوان بتوانند
-              محتوای شیت را درک کنند
+              محتوای برگه را درک کنند
             </p>
           </div>
           <div>
@@ -907,7 +907,7 @@ export default function SheetPage() {
               منوی ناوبری (Navigation Menu)
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              استفاده از شیت برای منوی ناوبری موبایل
+              استفاده از برگه برای منوی ناوبری موبایل
             </p>
             <div
               className="relative rounded-lg overflow-x-auto border border-border bg-muted"
@@ -944,7 +944,7 @@ export default function SheetPage() {
               جلوگیری از بسته شدن (Prevent Close)
             </h3>
             <p className="text-sm text-muted-foreground mb-4">
-              جلوگیری از بسته شدن شیت با کلیک خارج یا کلید Escape
+              جلوگیری از بسته شدن برگه با کلیک خارج یا کلید Escape
             </p>
             <div
               className="relative rounded-lg overflow-x-auto border border-border bg-muted"
