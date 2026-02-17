@@ -111,3 +111,5 @@ export {
   DrawerTitle,
   DrawerDescription,
 } from "./drawer/drawer";
+export { ScrollArea, ScrollBar } from "./scroll-area/scroll-area";
+export type { ScrollAreaProps, ScrollBarProps } from "./scroll-area/scroll-area";
