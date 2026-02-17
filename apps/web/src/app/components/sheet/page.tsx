@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Copy } from "lucide-react";
+import {
+  CodeBlock,
+  InstallCodeBlock,
+  InlineCodeBlock,
+} from "@/components/docs/code-block";
 import {
   Sheet,
   SheetContent,
@@ -271,52 +273,6 @@ export default function MyComponent() {
 </SheetContent>`,
 };
 
-function CodeBlock({
-  code,
-  language = "tsx",
-}: {
-  code: string;
-  language?: string;
-}) {
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(code);
-  };
-
-  return (
-    <details className="mt-0">
-      <summary className="cursor-pointer text-sm text-muted-foreground hover:text-foreground py-3 border border-t-0 border-border rounded-b-lg px-4 bg-muted/50">
-        مشاهده کد
-      </summary>
-      <div
-        className="relative rounded-b-lg overflow-x-auto border border-t-0 border-border bg-muted"
-        dir="ltr"
-      >
-        <button
-          onClick={copyToClipboard}
-          className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-          aria-label="Copy code"
-        >
-          <Copy className="h-4 w-4" />
-        </button>
-        <SyntaxHighlighter
-          language={language}
-          style={oneLight}
-          showLineNumbers
-          customStyle={{
-            margin: 0,
-            borderRadius: 0,
-            fontSize: "0.875rem",
-            background: "transparent",
-          }}
-          codeTagProps={{ style: { background: "transparent" } }}
-        >
-          {code}
-        </SyntaxHighlighter>
-      </div>
-    </details>
-  );
-}
-
 export default function SheetPage() {
   const [open, setOpen] = useState(false);
 
@@ -334,34 +290,10 @@ export default function SheetPage() {
       {/* Installation */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
-        <div
-          className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-          dir="ltr"
-        >
-          <button
-            onClick={() =>
-              navigator.clipboard.writeText("npx @quark-lab/rad-ui add sheet")
-            }
-            className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-            aria-label="Copy code"
-          >
-            <Copy className="h-4 w-4" />
-          </button>
-          <SyntaxHighlighter
-            language="bash"
-            style={oneLight}
-            showLineNumbers
-            customStyle={{
-              margin: 0,
-              borderRadius: "0.5rem",
-              fontSize: "0.875rem",
-              background: "transparent",
-            }}
-            codeTagProps={{ style: { background: "transparent" } }}
-          >
-            npx @quark-lab/rad-ui add sheet
-          </SyntaxHighlighter>
-        </div>
+        <InstallCodeBlock
+          code="npx @quark-lab/rad-ui add sheet"
+          language="bash"
+        />
       </section>
 
       {/* Component-specific demos */}
@@ -868,32 +800,7 @@ export default function SheetPage() {
       {/* Usage */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نحوه استفاده (Usage)</h2>
-        <div
-          className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-          dir="ltr"
-        >
-          <button
-            onClick={() => navigator.clipboard.writeText(codeExamples.usage)}
-            className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-            aria-label="Copy code"
-          >
-            <Copy className="h-4 w-4" />
-          </button>
-          <SyntaxHighlighter
-            language="tsx"
-            style={oneLight}
-            showLineNumbers
-            customStyle={{
-              margin: 0,
-              borderRadius: "0.5rem",
-              fontSize: "0.875rem",
-              background: "transparent",
-            }}
-            codeTagProps={{ style: { background: "transparent" } }}
-          >
-            {codeExamples.usage}
-          </SyntaxHighlighter>
-        </div>
+        <InlineCodeBlock code={codeExamples.usage} />
       </section>
 
       {/* Advanced Examples */}
@@ -909,34 +816,7 @@ export default function SheetPage() {
             <p className="text-sm text-muted-foreground mb-4">
               استفاده از برگه برای منوی ناوبری موبایل
             </p>
-            <div
-              className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-              dir="ltr"
-            >
-              <button
-                onClick={() =>
-                  navigator.clipboard.writeText(codeExamples.navigation)
-                }
-                className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-                aria-label="Copy code"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <SyntaxHighlighter
-                language="tsx"
-                style={oneLight}
-                showLineNumbers
-                customStyle={{
-                  margin: 0,
-                  borderRadius: "0.5rem",
-                  fontSize: "0.875rem",
-                  background: "transparent",
-                }}
-                codeTagProps={{ style: { background: "transparent" } }}
-              >
-                {codeExamples.navigation}
-              </SyntaxHighlighter>
-            </div>
+            <InlineCodeBlock code={codeExamples.navigation} />
           </div>
 
           <div>
@@ -946,34 +826,7 @@ export default function SheetPage() {
             <p className="text-sm text-muted-foreground mb-4">
               جلوگیری از بسته شدن برگه با کلیک خارج یا کلید Escape
             </p>
-            <div
-              className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-              dir="ltr"
-            >
-              <button
-                onClick={() =>
-                  navigator.clipboard.writeText(codeExamples.preventClose)
-                }
-                className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-                aria-label="Copy code"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <SyntaxHighlighter
-                language="tsx"
-                style={oneLight}
-                showLineNumbers
-                customStyle={{
-                  margin: 0,
-                  borderRadius: "0.5rem",
-                  fontSize: "0.875rem",
-                  background: "transparent",
-                }}
-                codeTagProps={{ style: { background: "transparent" } }}
-              >
-                {codeExamples.preventClose}
-              </SyntaxHighlighter>
-            </div>
+            <InlineCodeBlock code={codeExamples.preventClose} />
           </div>
         </div>
       </section>

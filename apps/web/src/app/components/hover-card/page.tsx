@@ -1,8 +1,10 @@
 "use client";
 
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
-import { Copy } from "lucide-react";
+import {
+  CodeBlock,
+  InstallCodeBlock,
+  InlineCodeBlock,
+} from "@/components/docs/code-block";
 import {
   HoverCard,
   HoverCardContent,
@@ -219,41 +221,6 @@ export function ProductPreview() {
 }`,
 };
 
-function CodeBlock({ code, language = "tsx" }: { code: string; language?: string }) {
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(code);
-  };
-
-  return (
-    <details className="mt-0">
-      <summary className="cursor-pointer text-sm text-muted-foreground hover:text-foreground py-3 border border-t-0 border-border rounded-b-lg px-4 bg-muted/50">
-        مشاهده کد
-      </summary>
-      <div
-        className="relative rounded-b-lg overflow-x-auto border border-t-0 border-border bg-muted"
-        dir="ltr"
-      >
-        <button
-          onClick={copyToClipboard}
-          className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-          aria-label="Copy code"
-        >
-          <Copy className="h-4 w-4" />
-        </button>
-        <SyntaxHighlighter
-          language={language}
-          style={oneLight}
-          showLineNumbers
-          customStyle={{ margin: 0, borderRadius: 0, fontSize: "0.875rem", background: "transparent" }}
-          codeTagProps={{ style: { background: "transparent" } }}
-        >
-          {code}
-        </SyntaxHighlighter>
-      </div>
-    </details>
-  );
-}
-
 export default function HoverCardPage() {
   return (
     <div className="container mx-auto px-4 md:px-8 py-8 md:py-12 max-w-5xl">
@@ -269,29 +236,10 @@ export default function HoverCardPage() {
       {/* Installation */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
-        <div
-          className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-          dir="ltr"
-        >
-          <button
-            onClick={() =>
-              navigator.clipboard.writeText("npx @quark-lab/rad-ui add hover-card")
-            }
-            className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-            aria-label="Copy code"
-          >
-            <Copy className="h-4 w-4" />
-          </button>
-          <SyntaxHighlighter
-            language="bash"
-            style={oneLight}
-            showLineNumbers
-            customStyle={{ margin: 0, borderRadius: "0.5rem", fontSize: "0.875rem", background: "transparent" }}
-            codeTagProps={{ style: { background: "transparent" } }}
-          >
-            npx @quark-lab/rad-ui add hover-card
-          </SyntaxHighlighter>
-        </div>
+        <InstallCodeBlock
+          code="npx @quark-lab/rad-ui add hover-card"
+          language="bash"
+        />
       </section>
 
       {/* Component-specific demos */}
@@ -675,27 +623,7 @@ export default function HoverCardPage() {
       {/* Usage */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نحوه استفاده (Usage)</h2>
-        <div
-          className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-          dir="ltr"
-        >
-          <button
-            onClick={() => navigator.clipboard.writeText(codeExamples.usage)}
-            className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-            aria-label="Copy code"
-          >
-            <Copy className="h-4 w-4" />
-          </button>
-          <SyntaxHighlighter
-            language="tsx"
-            style={oneLight}
-            showLineNumbers
-            customStyle={{ margin: 0, borderRadius: "0.5rem", fontSize: "0.875rem", background: "transparent" }}
-            codeTagProps={{ style: { background: "transparent" } }}
-          >
-            {codeExamples.usage}
-          </SyntaxHighlighter>
-        </div>
+        <InlineCodeBlock code={codeExamples.usage} />
       </section>
 
       {/* Advanced Examples */}
@@ -711,29 +639,7 @@ export default function HoverCardPage() {
             <p className="text-sm text-muted-foreground mb-4">
               نمایش اطلاعات کامل پروفایل کاربر با آواتار و تاریخ عضویت
             </p>
-            <div
-              className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-              dir="ltr"
-            >
-              <button
-                onClick={() =>
-                  navigator.clipboard.writeText(codeExamples.userProfile)
-                }
-                className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-                aria-label="Copy code"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <SyntaxHighlighter
-                language="tsx"
-                style={oneLight}
-                showLineNumbers
-                customStyle={{ margin: 0, borderRadius: "0.5rem", fontSize: "0.875rem", background: "transparent" }}
-                codeTagProps={{ style: { background: "transparent" } }}
-              >
-                {codeExamples.userProfile}
-              </SyntaxHighlighter>
-            </div>
+            <InlineCodeBlock code={codeExamples.userProfile} />
           </div>
 
           <div>
@@ -743,29 +649,7 @@ export default function HoverCardPage() {
             <p className="text-sm text-muted-foreground mb-4">
               نمایش پیش‌نمایش محصول با تصویر، عنوان و قیمت
             </p>
-            <div
-              className="relative rounded-lg overflow-x-auto border border-border bg-muted"
-              dir="ltr"
-            >
-              <button
-                onClick={() =>
-                  navigator.clipboard.writeText(codeExamples.productPreview)
-                }
-                className="absolute top-3 right-3 p-2 rounded-md bg-muted/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors z-10"
-                aria-label="Copy code"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <SyntaxHighlighter
-                language="tsx"
-                style={oneLight}
-                showLineNumbers
-                customStyle={{ margin: 0, borderRadius: "0.5rem", fontSize: "0.875rem", background: "transparent" }}
-                codeTagProps={{ style: { background: "transparent" } }}
-              >
-                {codeExamples.productPreview}
-              </SyntaxHighlighter>
-            </div>
+            <InlineCodeBlock code={codeExamples.productPreview} />
           </div>
         </div>
       </section>
