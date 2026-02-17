@@ -86,3 +86,15 @@ export {
   CardFooter,
 } from "./card/card";
 export type { CardProps } from "./card/card";
+  Dialog,
+  DialogPortal,
+  DialogOverlay,
+  DialogTrigger,
+  DialogClose,
+  DialogContent,
+  DialogHeader,
+  DialogFooter,
+  DialogTitle,
+  DialogDescription,
+} from "./dialog/dialog";
+export type { DialogContentProps } from "./dialog/dialog";
