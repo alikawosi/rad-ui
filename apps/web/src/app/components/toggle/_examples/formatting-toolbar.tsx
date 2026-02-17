@@ -69,7 +69,7 @@ export default function FormattingToolbarExample() {
         onPressedChange={(pressed) =>
           setFormatting({ ...formatting, bold: pressed })
         }
-        variant="ghost"
+        variant="outline"
         size="sm"
         aria-label="Toggle bold"
       >
@@ -80,7 +80,7 @@ export default function FormattingToolbarExample() {
         onPressedChange={(pressed) =>
           setFormatting({ ...formatting, italic: pressed })
         }
-        variant="ghost"
+        variant="outline"
         size="sm"
         aria-label="Toggle italic"
       >
@@ -91,7 +91,7 @@ export default function FormattingToolbarExample() {
         onPressedChange={(pressed) =>
           setFormatting({ ...formatting, underline: pressed })
         }
-        variant="ghost"
+        variant="outline"
         size="sm"
         aria-label="Toggle underline"
       >

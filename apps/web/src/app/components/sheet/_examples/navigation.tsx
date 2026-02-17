@@ -56,7 +56,7 @@ export default function NavigationExample() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="sm">
           <Menu className="h-5 w-5" />
         </Button>
       </SheetTrigger>
@@ -65,16 +65,28 @@ export default function NavigationExample() {
           <SheetTitle>منوی ناوبری</SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col gap-2 py-4">
-          <a href="#" className="px-4 py-2 hover:bg-muted rounded-md transition-colors">
+          <a
+            href="#"
+            className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
+          >
             خانه
           </a>
-          <a href="#" className="px-4 py-2 hover:bg-muted rounded-md transition-colors">
+          <a
+            href="#"
+            className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
+          >
             محصولات
           </a>
-          <a href="#" className="px-4 py-2 hover:bg-muted rounded-md transition-colors">
+          <a
+            href="#"
+            className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
+          >
             درباره ما
           </a>
-          <a href="#" className="px-4 py-2 hover:bg-muted rounded-md transition-colors">
+          <a
+            href="#"
+            className="px-4 py-2 hover:bg-muted rounded-md transition-colors"
+          >
             تماس با ما
           </a>
         </nav>

@@ -19,14 +19,20 @@ import VariantsExample, { code as variantsCode } from "./_examples/variants";
 import SizesExample, { code as sizesCode } from "./_examples/sizes";
 import WithTextExample, { code as withTextCode } from "./_examples/with-text";
 import DisabledExample, { code as disabledCode } from "./_examples/disabled";
-import InteractiveExample, { code as interactiveCode } from "./_examples/interactive";
-import CustomStylingExample, { code as customStylingCode } from "./_examples/custom-styling";
-import FormattingToolbarExample, { code as formattingToolbarCode } from "./_examples/formatting-toolbar";
+import InteractiveExample, {
+  code as interactiveCode,
+} from "./_examples/interactive";
+import CustomStylingExample, {
+  code as customStylingCode,
+} from "./_examples/custom-styling";
+import FormattingToolbarExample, {
+  code as formattingToolbarCode,
+} from "./_examples/formatting-toolbar";
 
 const toggleProps: PropDefinition[] = [
   {
     name: "variant",
-    type: '"default" | "outline" | "ghost"',
+    type: '"default" | "outline" ',
     defaultValue: '"default"',
     description: "نوع ظاهری دکمه",
   },
@@ -89,7 +95,10 @@ export default function TogglePage() {
       {/* Installation */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
-        <InstallCodeBlock code="npx @quark-lab/rad-ui add toggle" language="bash" />
+        <InstallCodeBlock
+          code="npx @quark-lab/rad-ui add toggle"
+          language="bash"
+        />
       </section>
 
       {/* Examples */}
@@ -269,14 +278,12 @@ export default function TogglePage() {
             <p className="text-muted-foreground">
               از{" "}
               <code className="text-sm bg-muted px-2 py-1 rounded">ms-2</code>{" "}
-              برای آیکون در سمت راست متن استفاده کنید تا در RTL صحیح نمایش
-              داده شود.
+              برای آیکون در سمت راست متن استفاده کنید تا در RTL صحیح نمایش داده
+              شود.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold mb-3">
-              دسترسی‌پذیری (Accessibility)
-            </h3>
+            <h3 className="font-semibold mb-3">دسترسی‌پذیری (Accessibility)</h3>
             <p className="text-muted-foreground">
               همیشه{" "}
               <code className="text-sm bg-muted px-2 py-1 rounded">
@@ -289,8 +296,8 @@ export default function TogglePage() {
           <div>
             <h3 className="font-semibold mb-3">گروه‌بندی (Grouping)</h3>
             <p className="text-muted-foreground">
-              برای دکمه‌های مرتبط مانند تراز متن یا قالب‌بندی، از گروه‌بندی
-              بصری با فاصله‌گذاری مناسب استفاده کنید.
+              برای دکمه‌های مرتبط مانند تراز متن یا قالب‌بندی، از گروه‌بندی بصری
+              با فاصله‌گذاری مناسب استفاده کنید.
             </p>
           </div>
         </div>

@@ -19,7 +19,9 @@ import { Heart } from "lucide-react";
 import BasicExample, { code as basicCode } from "./_examples/basic";
 import VariantsExample, { code as variantsCode } from "./_examples/variants";
 import SizesExample, { code as sizesCode } from "./_examples/sizes";
-import WithIconsExample, { code as withIconsCode } from "./_examples/with-icons";
+import WithIconsExample, {
+  code as withIconsCode,
+} from "./_examples/with-icons";
 import StatesExample, { code as statesCode } from "./_examples/states";
 import UsageExample, { code as usageCode } from "./_examples/usage";
 
@@ -70,13 +72,16 @@ export default function ButtonPage() {
       {/* Installation */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
-        <InstallCodeBlock code="npx @quark-lab/rad-ui add button" language="bash" />
+        <InstallCodeBlock
+          code="npx @quark-lab/rad-ui add button"
+          language="bash"
+        />
       </section>
 
       {/* Examples */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نمونه‌ها (Examples)</h2>
-        
+
         <ComponentExample
           title="استفاده پایه"
           titleEn="Basic Usage"
