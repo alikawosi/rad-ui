@@ -1,0 +1,21 @@
+{
+  "name": "scroll-area",
+  "type": "registry:ui",
+  "description": "Augments native scroll functionality for custom, cross-browser styling",
+  "platform": "web",
+  "dependencies": [
+    "@radix-ui/react-scroll-area"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "ui/scroll-area/scroll-area.tsx",
+      "type": "registry:ui",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport * as ScrollAreaPrimitive from \"@radix-ui/react-scroll-area\";\nimport { cn } from \"../../lib/utils\";\n\nexport interface ScrollAreaProps\n  extends React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root> {\n  /** Hide the scrollbar while keeping scroll functionality */\n  hideScrollbar?: boolean;\n  /** Custom class for the scrollbar thumb (only applies to default scrollbar) */\n  scrollbarThumbClassName?: string;\n}\n\nconst ScrollArea = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.Root>,\n  ScrollAreaProps\n>(\n  (\n    {\n      className,\n      children,\n      hideScrollbar = false,\n      scrollbarThumbClassName,\n      dir = \"rtl\",\n      ...props\n    },\n    ref\n  ) => (\n    <ScrollAreaPrimitive.Root\n      ref={ref}\n      dir={dir}\n      className={cn(\"relative overflow-hidden\", className)}\n      {...props}\n    >\n      <ScrollAreaPrimitive.Viewport className=\"h-full w-full rounded-[inherit]\">\n        {children}\n      </ScrollAreaPrimitive.Viewport>\n      <ScrollBar\n        className={hideScrollbar ? \"hidden\" : undefined}\n        thumbClassName={scrollbarThumbClassName}\n      />\n      <ScrollAreaPrimitive.Corner />\n    </ScrollAreaPrimitive.Root>\n  )\n);\n\nexport interface ScrollBarProps\n  extends React.ComponentPropsWithoutRef<\n    typeof ScrollAreaPrimitive.ScrollAreaScrollbar\n  > {\n  /** Custom class for the scrollbar thumb */\n  thumbClassName?: string;\n}\n\nconst ScrollBar = React.forwardRef<\n  React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,\n  ScrollBarProps\n>(({ className, orientation = \"vertical\", thumbClassName, ...props }, ref) => (\n  <ScrollAreaPrimitive.ScrollAreaScrollbar\n    ref={ref}\n    orientation={orientation}\n    className={cn(\n      \"flex touch-none select-none transition-colors\",\n      orientation === \"vertical\" &&\n        \"h-full w-2.5 border-s border-s-transparent p-[1px]\",\n      orientation === \"horizontal\" &&\n        \"h-2.5 flex-col border-t border-t-transparent p-[1px]\",\n      className\n    )}\n    {...props}\n  >\n    <ScrollAreaPrimitive.ScrollAreaThumb\n      className={cn(\"relative flex-1 rounded-full bg-border\", thumbClassName)}\n    />\n  </ScrollAreaPrimitive.ScrollAreaScrollbar>\n));\n\nScrollArea.displayName = ScrollAreaPrimitive.Root.displayName;\nScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;\n\nexport { ScrollArea, ScrollBar };\n"
+    }
+  ],
+  "utils": {
+    "path": "lib/utils.ts",
+    "content": "import { type ClassValue, clsx } from \"clsx\";\nimport { twMerge } from \"tailwind-merge\";\n\nexport function cn(...inputs: ClassValue[]) {\n  return twMerge(clsx(inputs));\n}\n\n"
+  }
+}

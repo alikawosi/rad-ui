@@ -49,6 +49,16 @@ export const components: ComponentDef[] = [
     internalDependencies: [],
   },
   {
+    name: "card",
+    description: "A container for grouping related content and actions",
+    platform: "web",
+    files: ["card/card.tsx"],
+    npmDependencies: {
+      "class-variance-authority": "^0.7.1",
+    },
+    internalDependencies: [],
+  },
+  {
     name: "checkbox",
     description:
       "A control that allows the user to toggle between checked and not checked",
@@ -73,6 +83,16 @@ export const components: ComponentDef[] = [
     internalDependencies: [],
   },
   {
+    name: "drawer",
+    description: "A drawer component for React",
+    platform: "web",
+    files: ["drawer/drawer.tsx"],
+    npmDependencies: {
+      vaul: "^1.1.2",
+    },
+    internalDependencies: [],
+  },
+  {
     name: "field",
     description:
       "A complete form field with label, description, error message, and more",
@@ -82,6 +102,16 @@ export const components: ComponentDef[] = [
       "class-variance-authority": "^0.7.1",
     },
     internalDependencies: ["label", "separator"],
+  },
+  {
+    name: "hover-card",
+    description: "For sighted users to preview content available behind a link",
+    platform: "web",
+    files: ["hover-card/hover-card.tsx"],
+    npmDependencies: {
+      "@radix-ui/react-hover-card": "^1.1.6",
+    },
+    internalDependencies: [],
   },
   {
     name: "input",
@@ -154,6 +184,30 @@ export const components: ComponentDef[] = [
     files: ["radio-group.tsx"],
     npmDependencies: {
       "@radix-ui/react-radio-group": "^1.2.0",
+      "lucide-react": "^0.309.0",
+    },
+    internalDependencies: [],
+  },
+  {
+    name: "scroll-area",
+    description:
+      "Augments native scroll functionality for custom, cross-browser styling",
+    platform: "web",
+    files: ["scroll-area/scroll-area.tsx"],
+    npmDependencies: {
+      "@radix-ui/react-scroll-area": "^1.2.10",
+    },
+    internalDependencies: [],
+  },
+  {
+    name: "sheet",
+    description:
+      "Extends the Dialog component to display content that complements the main screen",
+    platform: "web",
+    files: ["sheet/sheet.tsx"],
+    npmDependencies: {
+      "@radix-ui/react-dialog": "^1.1.15",
+      "class-variance-authority": "^0.7.1",
       "lucide-react": "^0.309.0",
     },
     internalDependencies: [],

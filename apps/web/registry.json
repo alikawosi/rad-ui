@@ -21,9 +21,7 @@
       "platform": "web",
       "dependencies": ["@radix-ui/react-avatar@^1.1.11"],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/avatar.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/avatar.tsx", "type": "registry:ui" }]
     },
     {
       "name": "badge",
@@ -32,9 +30,7 @@
       "platform": "web",
       "dependencies": ["class-variance-authority@^0.7.1"],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/badge.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/badge.tsx", "type": "registry:ui" }]
     },
     {
       "name": "button",
@@ -43,9 +39,7 @@
       "platform": "web",
       "dependencies": ["class-variance-authority@^0.7.1"],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/button.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/button.tsx", "type": "registry:ui" }]
     },
     {
       "name": "card",
@@ -73,15 +67,38 @@
       ]
     },
     {
+      "name": "dialog",
+      "type": "registry:ui",
+      "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-dialog@^1.1.15",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/dialog/dialog.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "description": "A drawer component for React",
+      "platform": "web",
+      "dependencies": ["vaul@^1.1.2"],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/drawer/drawer.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
       "name": "field",
       "type": "registry:ui",
       "description": "A complete form field with label, description, error message, and more",
       "platform": "web",
       "dependencies": ["class-variance-authority@^0.7.1"],
       "registryDependencies": ["label", "separator"],
-      "files": [
-        { "path": "registry/web/ui/field.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/field.tsx", "type": "registry:ui" }]
     },
     {
       "name": "input",
@@ -95,7 +112,10 @@
       "registryDependencies": [],
       "files": [
         { "path": "registry/web/ui/input/input.tsx", "type": "registry:ui" },
-        { "path": "registry/web/ui/input/validation.ts", "type": "registry:lib" }
+        {
+          "path": "registry/web/ui/input/validation.ts",
+          "type": "registry:lib"
+        }
       ]
     },
     {
@@ -127,9 +147,7 @@
       "platform": "web",
       "dependencies": [],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/kbd.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/kbd.tsx", "type": "registry:ui" }]
     },
     {
       "name": "label",
@@ -141,9 +159,7 @@
         "class-variance-authority@^0.7.1"
       ],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/label.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/label.tsx", "type": "registry:ui" }]
     },
     {
       "name": "native-select",
@@ -171,6 +187,35 @@
       "registryDependencies": [],
       "files": [
         { "path": "registry/web/ui/radio-group.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "description": "Augments native scroll functionality for custom, cross-browser styling",
+      "platform": "web",
+      "dependencies": ["@radix-ui/react-scroll-area@^1.2.10"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/scroll-area/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "description": "Extends the Dialog component to display content that complements the main screen",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-dialog@^1.1.15",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/sheet/sheet.tsx", "type": "registry:ui" }
       ]
     },
     {
@@ -202,9 +247,7 @@
       "platform": "web",
       "dependencies": ["@radix-ui/react-slider@^1.2.0"],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/slider.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/slider.tsx", "type": "registry:ui" }]
     },
     {
       "name": "spinner",
@@ -227,9 +270,7 @@
       "platform": "web",
       "dependencies": ["@radix-ui/react-switch@^1.1.0"],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/switch.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/switch.tsx", "type": "registry:ui" }]
     },
     {
       "name": "textarea",
@@ -252,9 +293,7 @@
         "class-variance-authority@^0.7.1"
       ],
       "registryDependencies": [],
-      "files": [
-        { "path": "registry/web/ui/toggle.tsx", "type": "registry:ui" }
-      ]
+      "files": [{ "path": "registry/web/ui/toggle.tsx", "type": "registry:ui" }]
     },
     {
       "name": "toggle-group",
@@ -278,7 +317,10 @@
       "dependencies": ["@radix-ui/react-hover-card@^1.1.6"],
       "registryDependencies": [],
       "files": [
-        { "path": "registry/web/ui/hover-card/hover-card.tsx", "type": "registry:ui" }
+        {
+          "path": "registry/web/ui/hover-card/hover-card.tsx",
+          "type": "registry:ui"
+        }
       ]
     }
   ]
