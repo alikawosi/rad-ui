@@ -1,5 +1,6 @@
 import {
   MousePointer2,
+  MousePointerClick,
   Minus,
   User,
   RectangleHorizontal,
@@ -237,6 +238,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/sheet",
         icon: PanelLeft,
         description: "پنل کشویی از لبه صفحه",
+      },
+      {
+        name: "Hover Card",
+        nameFA: "کارت پیش نمایش",
+        href: "/components/hover-card",
+        icon: MousePointerClick,
+        description: "نمایش پیش‌نمایش محتوا هنگام هاور روی یک لینک",
       },
     ],
   },

@@ -126,3 +126,8 @@ export {
   SheetDescription,
 } from "./sheet/sheet";
 export type { SheetContentProps } from "./sheet/sheet";
+export {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from "./hover-card/hover-card";
