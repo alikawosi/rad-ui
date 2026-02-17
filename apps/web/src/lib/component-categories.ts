@@ -1,5 +1,6 @@
 import {
   MousePointer2,
+  MousePointerClick,
   Minus,
   User,
   RectangleHorizontal,
@@ -19,6 +20,9 @@ import {
   FormInput,
   SquareStack,
   MessageSquare,
+  PanelRight,
+  PanelLeft,
+  ScrollText,
   type LucideIcon,
 } from "lucide-react";
 
@@ -166,6 +170,13 @@ export const componentCategories: ComponentCategory[] = [
         icon: Minus,
         description: "خط جداکننده بین المان‌ها",
       },
+      {
+        name: "Scroll Area",
+        nameFA: "ناحیه اسکرول",
+        href: "/components/scroll-area",
+        icon: ScrollText,
+        description: "ناحیه اسکرول‌پذیر با نوار اسکرول سفارشی",
+      },
     ],
   },
   {
@@ -213,6 +224,27 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/dialog",
         icon: MessageSquare,
         description: "پنجره مودال برای نمایش محتوای مهم",
+      },
+      {
+        name: "Drawer",
+        nameFA: "کشو",
+        href: "/components/drawer",
+        icon: PanelRight,
+        description: "پنل کشویی برای نمایش محتوا از لبه‌های صفحه",
+      },
+      {
+        name: "Sheet",
+        nameFA: "برگه",
+        href: "/components/sheet",
+        icon: PanelLeft,
+        description: "پنل کشویی از لبه صفحه",
+      },
+      {
+        name: "Hover Card",
+        nameFA: "کارت پیش نمایش",
+        href: "/components/hover-card",
+        icon: MousePointerClick,
+        description: "نمایش پیش‌نمایش محتوا هنگام هاور روی یک لینک",
       },
     ],
   },

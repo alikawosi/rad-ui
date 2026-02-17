@@ -99,3 +99,35 @@ export {
   DialogDescription,
 } from "./dialog/dialog";
 export type { DialogContentProps } from "./dialog/dialog";
+export {
+  Drawer,
+  DrawerPortal,
+  DrawerOverlay,
+  DrawerTrigger,
+  DrawerClose,
+  DrawerContent,
+  DrawerHeader,
+  DrawerFooter,
+  DrawerTitle,
+  DrawerDescription,
+} from "./drawer/drawer";
+export { ScrollArea, ScrollBar } from "./scroll-area/scroll-area";
+export type { ScrollAreaProps, ScrollBarProps } from "./scroll-area/scroll-area";
+export {
+  Sheet,
+  SheetPortal,
+  SheetOverlay,
+  SheetTrigger,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetFooter,
+  SheetTitle,
+  SheetDescription,
+} from "./sheet/sheet";
+export type { SheetContentProps } from "./sheet/sheet";
+export {
+  HoverCard,
+  HoverCardTrigger,
+  HoverCardContent,
+} from "./hover-card/hover-card";

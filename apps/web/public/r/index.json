@@ -55,6 +55,25 @@
     "registryDependencies": []
   },
   {
+    "name": "dialog",
+    "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-dialog",
+      "lucide-react"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "drawer",
+    "description": "A drawer component for React",
+    "platform": "web",
+    "dependencies": [
+      "vaul"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "field",
     "description": "A complete form field with label, description, error message, and more",
     "platform": "web",
@@ -137,6 +156,26 @@
     "registryDependencies": []
   },
   {
+    "name": "scroll-area",
+    "description": "Augments native scroll functionality for custom, cross-browser styling",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-scroll-area"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "sheet",
+    "description": "Extends the Dialog component to display content that complements the main screen",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-dialog",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "separator",
     "description": "Visually or semantically separates content",
     "platform": "web",
@@ -208,5 +247,14 @@
     "registryDependencies": [
       "toggle"
     ]
+  },
+  {
+    "name": "hover-card",
+    "description": "For sighted users to preview content available behind a link",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-hover-card"
+    ],
+    "registryDependencies": []
   }
 ]
