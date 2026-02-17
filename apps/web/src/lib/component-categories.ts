@@ -20,6 +20,7 @@ import {
   SquareStack,
   MessageSquare,
   PanelRight,
+  ScrollText,
   type LucideIcon,
 } from "lucide-react";
 
@@ -166,6 +167,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/separator",
         icon: Minus,
         description: "خط جداکننده بین المان‌ها",
+      },
+      {
+        name: "Scroll Area",
+        nameFA: "ناحیه اسکرول",
+        href: "/components/scroll-area",
+        icon: ScrollText,
+        description: "ناحیه اسکرول‌پذیر با نوار اسکرول سفارشی",
       },
     ],
   },
