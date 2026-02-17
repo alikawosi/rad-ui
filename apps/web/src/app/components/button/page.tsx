@@ -1,7 +1,31 @@
 "use client";
 
+import {
+  InstallCodeBlock,
+  InlineCodeBlock,
+} from "@/components/docs/code-block";
 import { Button } from "@/registry/web/ui";
 import { Download, Heart, Send } from "lucide-react";
+
+const usageCode = `import { Button } from "@/components/ui/button";
+
+export default function MyComponent() {
+  return (
+    <div>
+      <Button>پیش‌فرض</Button>
+      <Button variant="destructive">حذف</Button>
+      <Button variant="outline">حاشیه‌دار</Button>
+      <Button variant="ghost">شبح</Button>
+      <Button variant="link">لینک</Button>
+
+      <Button size="sm">کوچک</Button>
+      <Button size="md">متوسط</Button>
+      <Button size="lg">بزرگ</Button>
+
+      <Button disabled>غیرفعال</Button>
+    </div>
+  );
+}`;
 
 export default function ButtonDemo() {
   return (
@@ -17,11 +41,7 @@ export default function ButtonDemo() {
       {/* Installation */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب (Installation)</h2>
-        <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
-          <pre className="text-sm">
-            <code>{`npx @quark-lab/rad-ui add button`}</code>
-          </pre>
-        </div>
+        <InstallCodeBlock code="npx @quark-lab/rad-ui add button" />
       </section>
 
       {/* Variants */}
@@ -389,29 +409,7 @@ export default function ButtonDemo() {
       {/* Code Example */}
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نحوه استفاده (Usage)</h2>
-        <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
-          <pre className="text-sm">
-            <code>{`import { Button } from "@/components/ui/button";
-
-export default function MyComponent() {
-  return (
-    <div>
-      <Button>پیش‌فرض</Button>
-      <Button variant="destructive">حذف</Button>
-      <Button variant="outline">حاشیه‌دار</Button>
-      <Button variant="ghost">شبح</Button>
-      <Button variant="link">لینک</Button>
-
-      <Button size="sm">کوچک</Button>
-      <Button size="md">متوسط</Button>
-      <Button size="lg">بزرگ</Button>
-
-      <Button disabled>غیرفعال</Button>
-    </div>
-  );
-}`}</code>
-          </pre>
-        </div>
+        <InlineCodeBlock code={usageCode} />
       </section>
 
       {/* Advanced Examples */}
@@ -422,38 +420,32 @@ export default function MyComponent() {
         <div className="space-y-6">
           <div>
             <h3 className="font-medium mb-3">استایل سفارشی (Custom Styling)</h3>
-            <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
-              <pre className="text-sm">
-                <code>{`<Button className="bg-gradient-to-r from-purple-500 to-pink-500">
+            <InlineCodeBlock
+              code={`<Button className="bg-gradient-to-r from-purple-500 to-pink-500">
   دکمه رنگی
-</Button>`}</code>
-              </pre>
-            </div>
+</Button>`}
+            />
           </div>
           <div>
             <h3 className="font-medium mb-3">با رویداد (With Event Handler)</h3>
-            <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
-              <pre className="text-sm">
-                <code>{`<Button onClick={() => {
+            <InlineCodeBlock
+              code={`<Button onClick={() => {
   console.log("کلیک شد!");
   // انجام عملیات
 }}>
   کلیک کن
-</Button>`}</code>
-              </pre>
-            </div>
+</Button>`}
+            />
           </div>
           <div>
             <h3 className="font-medium mb-3">فقط آیکون (Icon Only)</h3>
-            <div className="bg-muted p-6 rounded-lg overflow-x-auto" dir="ltr">
-              <pre className="text-sm">
-                <code>{`import { Heart } from "lucide-react";
+            <InlineCodeBlock
+              code={`import { Heart } from "lucide-react";
 
 <Button size="sm" className="aspect-square p-0">
   <Heart className="h-4 w-4" />
-</Button>`}</code>
-              </pre>
-            </div>
+</Button>`}
+            />
           </div>
         </div>
       </section>
