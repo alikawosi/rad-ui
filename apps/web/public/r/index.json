@@ -265,5 +265,14 @@
       "@radix-ui/react-hover-card"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "popover",
+    "description": "Displays rich content in a portal, triggered by a button",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-popover"
+    ],
+    "registryDependencies": []
   }
 ]

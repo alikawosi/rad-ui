@@ -333,6 +333,20 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "description": "Displays rich content in a portal, triggered by a button",
+      "platform": "web",
+      "dependencies": ["@radix-ui/react-popover@^1.1.6"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/popover/popover.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

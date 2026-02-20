@@ -24,6 +24,7 @@ import {
   PanelLeft,
   ScrollText,
   Inbox,
+  ArrowUpRight,
   type LucideIcon,
 } from "lucide-react";
 
@@ -253,6 +254,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/empty",
         icon: Inbox,
         description: "نمایش حالت خالی برای صفحات و لیست‌ها",
+      },
+      {
+        name: "Popover",
+        nameFA: "پاپ‌اور",
+        href: "/components/popover",
+        icon: ArrowUpRight,
+        description: "نمایش محتوای غنی در یک پورتال با کلیک",
       },
     ],
   },
