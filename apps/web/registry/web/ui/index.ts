@@ -142,3 +142,11 @@ export {
   EmptyContent,
 } from "./empty/empty";
 export type { EmptyProps, EmptyMediaProps } from "./empty/empty";
+export {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverTitle,
+  PopoverDescription,
+} from "./popover/popover";
