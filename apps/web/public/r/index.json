@@ -292,5 +292,15 @@
       "@radix-ui/react-progress"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "tabs",
+    "description": "Switch between different views in the same space using horizontal tabs",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-tabs",
+      "class-variance-authority"
+    ],
+    "registryDependencies": []
   }
 ]

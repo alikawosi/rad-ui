@@ -181,6 +181,13 @@ export const componentCategories: ComponentCategory[] = [
         icon: ScrollText,
         description: "ناحیه اسکرول‌پذیر با نوار اسکرول سفارشی",
       },
+      {
+        name: "Tabs",
+        nameFA: "تب‌ها",
+        href: "/components/tabs",
+        icon: SquareStack,
+        description: "جابه‌جایی بین نماهای مختلف در یک صفحه",
+      },
     ],
   },
   {
