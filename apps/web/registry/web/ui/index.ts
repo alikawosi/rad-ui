@@ -157,3 +157,9 @@ export {
   TooltipProvider,
 } from "./tooltip/tooltip";
 export { Progress } from "./progress/progress";
+export {
+  Tabs,
+  TabsList,
+  TabsTrigger,
+  TabsContent,
+} from "./tabs/tabs";
