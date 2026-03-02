@@ -128,6 +128,16 @@
     "registryDependencies": []
   },
   {
+    "name": "item",
+    "description": "A versatile component for displaying content with media, title, description, and actions",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-slot",
+      "class-variance-authority"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "kbd",
     "description": "Display keyboard shortcuts and key combinations",
     "platform": "web",

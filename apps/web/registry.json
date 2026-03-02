@@ -152,6 +152,20 @@
       ]
     },
     {
+      "name": "item",
+      "type": "registry:ui",
+      "description": "A versatile component for displaying content with media, title, description, and actions",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-slot@^1.1.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/item/item.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
       "name": "kbd",
       "type": "registry:ui",
       "description": "Display keyboard shortcuts and key combinations",
