@@ -1,5 +1,15 @@
 export { cn } from "../lib/utils";
 export { Button, buttonVariants } from "./button";
+export {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+  ChartLegend,
+  ChartLegendContent,
+  ChartStyle,
+  useChart,
+} from "./chart/chart";
+export type { ChartConfig } from "./chart/chart";
 export type { ButtonProps } from "./button";
 export { Separator } from "./separator";
 export { Avatar, AvatarImage, AvatarFallback } from "./avatar";
@@ -114,6 +124,18 @@ export {
 export { ScrollArea, ScrollBar } from "./scroll-area/scroll-area";
 export type { ScrollAreaProps, ScrollBarProps } from "./scroll-area/scroll-area";
 export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+  SelectScrollUpButton,
+  SelectScrollDownButton,
+} from "./select/select";
+export {
   Sheet,
   SheetPortal,
   SheetOverlay,
@@ -143,6 +165,21 @@ export {
 } from "./empty/empty";
 export type { EmptyProps, EmptyMediaProps } from "./empty/empty";
 export {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+  PaginationEllipsis,
+  paginationLinkVariants,
+} from "./pagination/pagination";
+export type {
+  PaginationLinkProps,
+  PaginationPreviousProps,
+  PaginationNextProps,
+} from "./pagination/pagination";
+export {
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -163,3 +200,63 @@ export {
   TabsTrigger,
   TabsContent,
 } from "./tabs/tabs";
+export {
+  Item,
+  itemVariants,
+  ItemGroup,
+  itemGroupVariants,
+  ItemSeparator,
+  ItemMedia,
+  itemMediaVariants,
+  ItemContent,
+  ItemTitle,
+  ItemDescription,
+  ItemActions,
+} from "./item/item";
+export type { ItemProps, ItemGroupProps, ItemMediaProps } from "./item/item";
+export {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuCheckboxItem,
+  DropdownMenuRadioItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuGroup,
+  DropdownMenuPortal,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuRadioGroup,
+} from "./dropdown-menu/dropdown-menu";
+export {
+  Menubar,
+  MenubarMenu,
+  MenubarTrigger,
+  MenubarContent,
+  MenubarItem,
+  menubarItemVariants,
+  MenubarCheckboxItem,
+  MenubarRadioItem,
+  MenubarLabel,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarGroup,
+  MenubarPortal,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarRadioGroup,
+} from "./menubar/menubar";
+export {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
+} from "./navigation-menu/navigation-menu";

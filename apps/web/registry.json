@@ -42,6 +42,17 @@
       "files": [{ "path": "registry/web/ui/button.tsx", "type": "registry:ui" }]
     },
     {
+      "name": "chart",
+      "type": "registry:ui",
+      "description": "Chart components built on Recharts with tooltip and legend",
+      "platform": "web",
+      "dependencies": ["recharts@^3.7.0"],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/chart/chart.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
       "name": "card",
       "type": "registry:ui",
       "description": "A container for grouping related content and actions",
@@ -103,6 +114,23 @@
       ]
     },
     {
+      "name": "pagination",
+      "type": "registry:ui",
+      "description": "Navigate between pages with previous, next, and page number links",
+      "platform": "web",
+      "dependencies": [
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/pagination/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "field",
       "type": "registry:ui",
       "description": "A complete form field with label, description, error message, and more",
@@ -149,6 +177,20 @@
       "registryDependencies": [],
       "files": [
         { "path": "registry/web/ui/input-otp.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "description": "A versatile component for displaying content with media, title, description, and actions",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-slot@^1.1.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/item/item.tsx", "type": "registry:ui" }
       ]
     },
     {
@@ -210,6 +252,23 @@
       "files": [
         {
           "path": "registry/web/ui/scroll-area/scroll-area.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "description": "Displays a list of options for the user to pick from",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-select@^2.1.8",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/select/select.tsx",
           "type": "registry:ui"
         }
       ]
@@ -389,6 +448,59 @@
       "files": [
         {
           "path": "registry/web/ui/tabs/tabs.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "description": "Displays a menu to the user triggered by a button",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu@^2.1.8",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/dropdown-menu/dropdown-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "description": "A visually persistent menu bar with multiple dropdown menus",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-menubar@^1.1.16",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/menubar/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "description": "A collection of links for navigating websites with dropdown content",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-navigation-menu@^1.2.10",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/navigation-menu/navigation-menu.tsx",
           "type": "registry:ui"
         }
       ]
