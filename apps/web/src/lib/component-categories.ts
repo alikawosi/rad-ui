@@ -54,18 +54,18 @@ export const componentCategories: ComponentCategory[] = [
     categoryFA: "فرم",
     components: [
       {
-        name: "Button",
-        nameFA: "دکمه",
-        href: "/components/button",
-        icon: MousePointer2,
-        description: "دکمه‌های قابل تنظیم با چندین نوع و اندازه",
-      },
-      {
         name: "Label",
         nameFA: "برچسب",
         href: "/components/label",
         icon: Tag,
         description: "برچسب‌های متنی برای فرم‌ها",
+      },
+      {
+        name: "Button",
+        nameFA: "دکمه",
+        href: "/components/button",
+        icon: MousePointer2,
+        description: "دکمه‌های قابل تنظیم با چندین نوع و اندازه",
       },
       {
         name: "Toggle",
@@ -89,13 +89,6 @@ export const componentCategories: ComponentCategory[] = [
         description: "فیلد ورودی متن با انواع مختلف",
       },
       {
-        name: "Input OTP",
-        nameFA: "ورودی رمز یکبار مصرف",
-        href: "/components/input-otp",
-        icon: Keyboard,
-        description: "ورودی رمز یکبار مصرف",
-      },
-      {
         name: "Input Group",
         nameFA: "گروه ورودی",
         href: "/components/input-group",
@@ -103,18 +96,11 @@ export const componentCategories: ComponentCategory[] = [
         description: "گروه‌بندی فیلدهای ورودی",
       },
       {
-        name: "Field",
-        nameFA: "فیلد فرم",
-        href: "/components/field",
-        icon: FormInput,
-        description: "فیلد فرم با برچسب و پیام خطا",
-      },
-      {
-        name: "Native Select",
-        nameFA: "انتخابگر بومی",
-        href: "/components/native-select",
-        icon: ChevronDown,
-        description: "منوی انتخاب بومی",
+        name: "Input OTP",
+        nameFA: "ورودی رمز یکبار مصرف",
+        href: "/components/input-otp",
+        icon: Keyboard,
+        description: "ورودی رمز یکبار مصرف",
       },
       {
         name: "Textarea",
@@ -123,6 +109,22 @@ export const componentCategories: ComponentCategory[] = [
         icon: TextCursorInput,
         description: "ناحیه متن چندخطی",
       },
+      {
+        name: "Radio Group",
+        nameFA: "دکمه رادیویی",
+        href: "/components/radio-group",
+        icon: CircleDot,
+        description: "گروه دکمه‌های رادیویی",
+      },
+
+      {
+        name: "Field",
+        nameFA: "فیلد فرم",
+        href: "/components/field",
+        icon: FormInput,
+        description: "فیلد فرم با برچسب و پیام خطا",
+      },
+
       {
         name: "Switch",
         nameFA: "سوئیچ",
@@ -144,13 +146,7 @@ export const componentCategories: ComponentCategory[] = [
         icon: CheckSquare,
         description: "چک‌باکس برای انتخاب‌های چندگانه",
       },
-      {
-        name: "Radio Group",
-        nameFA: "دکمه رادیویی",
-        href: "/components/radio-group",
-        icon: CircleDot,
-        description: "گروه دکمه‌های رادیویی",
-      },
+
       {
         name: "Select",
         nameFA: "انتخابگر",
@@ -159,18 +155,11 @@ export const componentCategories: ComponentCategory[] = [
         description: "نمایش لیست گزینه‌ها برای انتخاب کاربر",
       },
       {
-        name: "Dropdown Menu",
-        nameFA: "منوی کشویی",
-        href: "/components/dropdown-menu",
-        icon: Menu,
-        description: "نمایش منو برای کاربر با کلیک روی دکمه",
-      },
-      {
-        name: "Menubar",
-        nameFA: "نوار منو",
-        href: "/components/menubar",
-        icon: Menu,
-        description: "نوار منوی افقی با چند منوی کشویی",
+        name: "Native Select",
+        nameFA: "انتخابگر بومی",
+        href: "/components/native-select",
+        icon: ChevronDown,
+        description: "منوی انتخاب بومی",
       },
     ],
   },
@@ -226,6 +215,20 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/pagination",
         icon: ChevronsLeftRight,
         description: "ناوبری بین صفحات با دکمه‌های قبلی، بعدی و شماره صفحه",
+      },
+      {
+        name: "Dropdown Menu",
+        nameFA: "منوی کشویی",
+        href: "/components/dropdown-menu",
+        icon: Menu,
+        description: "نمایش منو برای کاربر با کلیک روی دکمه",
+      },
+      {
+        name: "Menubar",
+        nameFA: "نوار منو",
+        href: "/components/menubar",
+        icon: Menu,
+        description: "نوار منوی افقی با چند منوی کشویی",
       },
       {
         name: "Navigation Menu",
@@ -331,6 +334,7 @@ export const componentCategories: ComponentCategory[] = [
         icon: Activity,
         description: "نمایش میزان پیشرفت انجام یک کار به صورت نوار پیشرفت",
       },
+
       {
         name: "Chart",
         nameFA: "نمودار",
@@ -343,4 +347,6 @@ export const componentCategories: ComponentCategory[] = [
 ];
 
 // Flatten all components for easy access
-export const allComponents = componentCategories.flatMap((cat) => cat.components);
+export const allComponents = componentCategories.flatMap(
+  (cat) => cat.components
+);
