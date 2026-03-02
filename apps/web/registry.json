@@ -457,6 +457,24 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "description": "A visually persistent menu bar with multiple dropdown menus",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-menubar@^1.1.16",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/menubar/menubar.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }
