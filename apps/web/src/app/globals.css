@@ -20,6 +20,11 @@
     --muted-foreground: 200 10% 42%;
     --ring: 174 72% 40%;
     --radius: 0.5rem;
+    --chart-1: 174 72% 40%;
+    --chart-2: 35 85% 55%;
+    --chart-3: 270 60% 50%;
+    --chart-4: 348 75% 48%;
+    --chart-5: 95 55% 40%;
   }
 
   .dark {
@@ -38,6 +43,11 @@
     --muted: 200 28% 15%;
     --muted-foreground: 180 15% 65%;
     --ring: 174 65% 52%;
+    --chart-1: 174 65% 52%;
+    --chart-2: 35 85% 60%;
+    --chart-3: 270 55% 62%;
+    --chart-4: 348 70% 58%;
+    --chart-5: 95 50% 52%;
   }
 
   /* Theme: Kahgel (Warm Clay) - Updated with #c68F3F */
@@ -57,6 +67,11 @@
     --muted: 40 10% 92%;
     --muted-foreground: 220 10% 40%;
     --ring: 35 55% 51%;
+    --chart-1: 35 85% 50%;
+    --chart-2: 200 70% 48%;
+    --chart-3: 140 55% 40%;
+    --chart-4: 340 70% 48%;
+    --chart-5: 270 55% 50%;
   }
 
   .theme-kahgel.dark {
@@ -74,6 +89,11 @@
     --muted: 217 33% 17%;
     --muted-foreground: 210 20% 70%;
     --ring: 35 55% 60%;
+    --chart-1: 35 80% 58%;
+    --chart-2: 200 65% 58%;
+    --chart-3: 140 50% 52%;
+    --chart-4: 340 65% 58%;
+    --chart-5: 270 50% 62%;
   }
 
   /* Theme: Firouzeh (Persian Turquoise) */
@@ -93,6 +113,11 @@
     --muted: 180 12% 92%;
     --muted-foreground: 200 10% 42%;
     --ring: 174 72% 40%;
+    --chart-1: 174 72% 40%;
+    --chart-2: 35 85% 55%;
+    --chart-3: 270 60% 50%;
+    --chart-4: 348 75% 48%;
+    --chart-5: 95 55% 40%;
   }
 
   .theme-firouzeh.dark {
@@ -110,6 +135,11 @@
     --muted: 200 28% 15%;
     --muted-foreground: 180 15% 65%;
     --ring: 174 65% 52%;
+    --chart-1: 174 65% 52%;
+    --chart-2: 35 85% 60%;
+    --chart-3: 270 55% 62%;
+    --chart-4: 348 70% 58%;
+    --chart-5: 95 50% 52%;
   }
 
   /* Theme: Lajvard (Lapis Lazuli) */
@@ -129,6 +159,11 @@
     --muted: 225 15% 92%;
     --muted-foreground: 225 10% 42%;
     --ring: 225 75% 45%;
+    --chart-1: 225 75% 45%;
+    --chart-2: 45 85% 52%;
+    --chart-3: 150 55% 40%;
+    --chart-4: 348 70% 48%;
+    --chart-5: 300 50% 48%;
   }
 
   .theme-lajvard.dark {
@@ -146,6 +181,11 @@
     --muted: 230 28% 15%;
     --muted-foreground: 220 15% 65%;
     --ring: 220 70% 58%;
+    --chart-1: 220 70% 58%;
+    --chart-2: 45 80% 58%;
+    --chart-3: 150 50% 52%;
+    --chart-4: 348 65% 58%;
+    --chart-5: 300 45% 60%;
   }
 
   /* Theme: Puste (Pistachio) */
@@ -165,6 +205,11 @@
     --muted: 85 12% 91%;
     --muted-foreground: 95 8% 42%;
     --ring: 95 55% 38%;
+    --chart-1: 95 55% 38%;
+    --chart-2: 220 70% 50%;
+    --chart-3: 35 80% 50%;
+    --chart-4: 340 70% 48%;
+    --chart-5: 280 55% 48%;
   }
 
   .theme-puste.dark {
@@ -182,6 +227,11 @@
     --muted: 105 22% 14%;
     --muted-foreground: 95 15% 62%;
     --ring: 95 50% 52%;
+    --chart-1: 95 50% 52%;
+    --chart-2: 220 65% 58%;
+    --chart-3: 35 75% 58%;
+    --chart-4: 340 65% 58%;
+    --chart-5: 280 50% 60%;
   }
 
   /* Theme: Anar (Pomegranate) */
@@ -201,6 +251,11 @@
     --muted: 350 12% 92%;
     --muted-foreground: 350 8% 42%;
     --ring: 348 75% 42%;
+    --chart-1: 348 75% 42%;
+    --chart-2: 195 70% 45%;
+    --chart-3: 50 80% 48%;
+    --chart-4: 140 55% 40%;
+    --chart-5: 270 55% 50%;
   }
 
   .theme-anar.dark {
@@ -218,6 +273,11 @@
     --muted: 350 25% 14%;
     --muted-foreground: 350 15% 62%;
     --ring: 348 68% 55%;
+    --chart-1: 348 68% 55%;
+    --chart-2: 195 65% 55%;
+    --chart-3: 50 75% 55%;
+    --chart-4: 140 50% 52%;
+    --chart-5: 270 50% 62%;
   }
 }
 

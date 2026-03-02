@@ -59,6 +59,16 @@ export const components: ComponentDef[] = [
     internalDependencies: [],
   },
   {
+    name: "chart",
+    description: "Chart components built on Recharts with tooltip and legend",
+    platform: "web",
+    files: ["chart/chart.tsx"],
+    npmDependencies: {
+      recharts: "^3.7.0",
+    },
+    internalDependencies: [],
+  },
+  {
     name: "checkbox",
     description:
       "A control that allows the user to toggle between checked and not checked",

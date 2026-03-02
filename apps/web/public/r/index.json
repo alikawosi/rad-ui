@@ -36,6 +36,15 @@
     "registryDependencies": []
   },
   {
+    "name": "chart",
+    "description": "Chart components built on Recharts with tooltip and legend",
+    "platform": "web",
+    "dependencies": [
+      "recharts"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "card",
     "description": "A container for grouping related content and actions",
     "platform": "web",
