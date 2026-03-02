@@ -27,6 +27,7 @@ import {
   ArrowUpRight,
   HelpCircle,
   Activity,
+  LayoutList,
   type LucideIcon,
 } from "lucide-react";
 
@@ -187,6 +188,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/tabs",
         icon: SquareStack,
         description: "جابه‌جایی بین نماهای مختلف در یک صفحه",
+      },
+      {
+        name: "Item",
+        nameFA: "آیتم",
+        href: "/components/item",
+        icon: LayoutList,
+        description: "نمایش محتوا شامل تصویر، عنوان و اقدامات",
       },
     ],
   },

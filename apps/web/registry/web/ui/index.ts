@@ -163,3 +163,17 @@ export {
   TabsTrigger,
   TabsContent,
 } from "./tabs/tabs";
+export {
+  Item,
+  itemVariants,
+  ItemGroup,
+  itemGroupVariants,
+  ItemSeparator,
+  ItemMedia,
+  itemMediaVariants,
+  ItemContent,
+  ItemTitle,
+  ItemDescription,
+  ItemActions,
+} from "./item/item";
+export type { ItemProps, ItemGroupProps, ItemMediaProps } from "./item/item";
