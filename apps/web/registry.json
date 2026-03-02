@@ -475,6 +475,24 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "description": "A collection of links for navigating websites with dropdown content",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-navigation-menu@^1.2.10",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/navigation-menu/navigation-menu.tsx",
+          "type": "registry:ui"
+        }
+      ]
     }
   ]
 }

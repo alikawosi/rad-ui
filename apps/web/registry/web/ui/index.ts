@@ -240,3 +240,13 @@ export {
   MenubarSubTrigger,
   MenubarRadioGroup,
 } from "./menubar/menubar";
+export {
+  NavigationMenu,
+  NavigationMenuList,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuLink,
+  NavigationMenuViewport,
+  navigationMenuTriggerStyle,
+} from "./navigation-menu/navigation-menu";
