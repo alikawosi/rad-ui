@@ -322,5 +322,15 @@
       "class-variance-authority"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "dropdown-menu",
+    "description": "Displays a menu to the user triggered by a button",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-dropdown-menu",
+      "lucide-react"
+    ],
+    "registryDependencies": []
   }
 ]

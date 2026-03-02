@@ -28,6 +28,7 @@ import {
   HelpCircle,
   Activity,
   LayoutList,
+  Menu,
   type LucideIcon,
 } from "lucide-react";
 
@@ -154,6 +155,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/select",
         icon: ChevronDown,
         description: "نمایش لیست گزینه‌ها برای انتخاب کاربر",
+      },
+      {
+        name: "Dropdown Menu",
+        nameFA: "منوی کشویی",
+        href: "/components/dropdown-menu",
+        icon: Menu,
+        description: "نمایش منو برای کاربر با کلیک روی دکمه",
       },
     ],
   },
