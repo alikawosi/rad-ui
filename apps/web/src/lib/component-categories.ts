@@ -226,6 +226,13 @@ export const componentCategories: ComponentCategory[] = [
         icon: ChevronsLeftRight,
         description: "ناوبری بین صفحات با دکمه‌های قبلی، بعدی و شماره صفحه",
       },
+      {
+        name: "Navigation Menu",
+        nameFA: "منوی ناوبری",
+        href: "/components/navigation-menu",
+        icon: Menu,
+        description: "مجموعه لینک‌ها برای ناوبری وب‌سایت با محتوای کشویی",
+      },
     ],
   },
   {

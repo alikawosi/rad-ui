@@ -353,5 +353,16 @@
       "lucide-react"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "navigation-menu",
+    "description": "A collection of links for navigating websites with dropdown content",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-navigation-menu",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": []
   }
 ]
