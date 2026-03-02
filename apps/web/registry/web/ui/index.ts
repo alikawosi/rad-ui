@@ -114,6 +114,18 @@ export {
 export { ScrollArea, ScrollBar } from "./scroll-area/scroll-area";
 export type { ScrollAreaProps, ScrollBarProps } from "./scroll-area/scroll-area";
 export {
+  Select,
+  SelectGroup,
+  SelectValue,
+  SelectTrigger,
+  SelectContent,
+  SelectLabel,
+  SelectItem,
+  SelectSeparator,
+  SelectScrollUpButton,
+  SelectScrollDownButton,
+} from "./select/select";
+export {
   Sheet,
   SheetPortal,
   SheetOverlay,

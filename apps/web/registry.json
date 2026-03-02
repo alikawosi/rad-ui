@@ -229,6 +229,23 @@
       ]
     },
     {
+      "name": "select",
+      "type": "registry:ui",
+      "description": "Displays a list of options for the user to pick from",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-select@^2.1.8",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/select/select.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "sheet",
       "type": "registry:ui",
       "description": "Extends the Dialog component to display content that complements the main screen",
