@@ -103,6 +103,23 @@
       ]
     },
     {
+      "name": "pagination",
+      "type": "registry:ui",
+      "description": "Navigate between pages with previous, next, and page number links",
+      "platform": "web",
+      "dependencies": [
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/web/ui/pagination/pagination.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "field",
       "type": "registry:ui",
       "description": "A complete form field with label, description, error message, and more",
