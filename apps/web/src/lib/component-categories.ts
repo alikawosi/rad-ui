@@ -164,6 +164,13 @@ export const componentCategories: ComponentCategory[] = [
         icon: Menu,
         description: "نمایش منو برای کاربر با کلیک روی دکمه",
       },
+      {
+        name: "Menubar",
+        nameFA: "نوار منو",
+        href: "/components/menubar",
+        icon: Menu,
+        description: "نوار منوی افقی با چند منوی کشویی",
+      },
     ],
   },
   {

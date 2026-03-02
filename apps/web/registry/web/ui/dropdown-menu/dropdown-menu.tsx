@@ -51,12 +51,9 @@ DropdownMenuSubTrigger.displayName =
 const DropdownMenuSubContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.SubContent>,
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.SubContent>
->(({ className, side = "right", sideOffset = 0, alignOffset = 0, ...props }, ref) => (
+>(({ className, ...props }, ref) => (
   <DropdownMenuPrimitive.SubContent
     ref={ref}
-    side={side}
-    sideOffset={sideOffset}
-    alignOffset={alignOffset}
     className={cn(
       "z-[60] min-w-[8rem] overflow-hidden rounded-md border border-border bg-background p-1 text-foreground shadow-lg",
       "data-[state=open]:animate-in data-[state=closed]:animate-out",
@@ -77,12 +74,12 @@ DropdownMenuSubContent.displayName =
 const DropdownMenuContent = React.forwardRef<
   React.ElementRef<typeof DropdownMenuPrimitive.Content>,
   React.ComponentPropsWithoutRef<typeof DropdownMenuPrimitive.Content>
->(({ className, sideOffset = 4, ...props }, ref) => (
+>(({ className, sideOffset = 4, style, ...props }, ref) => (
   <DropdownMenuPrimitive.Portal>
     <DropdownMenuPrimitive.Content
       ref={ref}
-      dir="rtl"
       sideOffset={sideOffset}
+      style={{ ...style, direction: "rtl" }}
       className={cn(
         "z-50 min-w-[8rem] overflow-hidden rounded-md border border-border bg-background p-1 text-foreground shadow-md",
         "data-[state=open]:animate-in data-[state=closed]:animate-out",

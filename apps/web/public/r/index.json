@@ -342,5 +342,16 @@
       "lucide-react"
     ],
     "registryDependencies": []
+  },
+  {
+    "name": "menubar",
+    "description": "A visually persistent menu bar with multiple dropdown menus",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-menubar",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": []
   }
 ]
