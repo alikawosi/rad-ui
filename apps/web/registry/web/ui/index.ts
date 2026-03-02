@@ -1,5 +1,15 @@
 export { cn } from "../lib/utils";
 export { Button, buttonVariants } from "./button";
+export {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+  ChartLegend,
+  ChartLegendContent,
+  ChartStyle,
+  useChart,
+} from "./chart/chart";
+export type { ChartConfig } from "./chart/chart";
 export type { ButtonProps } from "./button";
 export { Separator } from "./separator";
 export { Avatar, AvatarImage, AvatarFallback } from "./avatar";

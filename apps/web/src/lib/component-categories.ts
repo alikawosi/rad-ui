@@ -30,6 +30,7 @@ import {
   Activity,
   LayoutList,
   Menu,
+  BarChart3,
   type LucideIcon,
 } from "lucide-react";
 
@@ -329,6 +330,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/progress",
         icon: Activity,
         description: "نمایش میزان پیشرفت انجام یک کار به صورت نوار پیشرفت",
+      },
+      {
+        name: "Chart",
+        nameFA: "نمودار",
+        href: "/components/chart",
+        icon: BarChart3,
+        description: "نمودارهای داده با Recharts همراه با تولتیپ و راهنما",
       },
     ],
   },

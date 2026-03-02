@@ -42,6 +42,17 @@
       "files": [{ "path": "registry/web/ui/button.tsx", "type": "registry:ui" }]
     },
     {
+      "name": "chart",
+      "type": "registry:ui",
+      "description": "Chart components built on Recharts with tooltip and legend",
+      "platform": "web",
+      "dependencies": ["recharts@^3.7.0"],
+      "registryDependencies": [],
+      "files": [
+        { "path": "registry/web/ui/chart/chart.tsx", "type": "registry:ui" }
+      ]
+    },
+    {
       "name": "card",
       "type": "registry:ui",
       "description": "A container for grouping related content and actions",
