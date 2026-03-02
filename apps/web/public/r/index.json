@@ -83,6 +83,16 @@
     "registryDependencies": []
   },
   {
+    "name": "pagination",
+    "description": "Navigate between pages with previous, next, and page number links",
+    "platform": "web",
+    "dependencies": [
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "field",
     "description": "A complete form field with label, description, error message, and more",
     "platform": "web",

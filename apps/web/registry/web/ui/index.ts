@@ -155,6 +155,21 @@ export {
 } from "./empty/empty";
 export type { EmptyProps, EmptyMediaProps } from "./empty/empty";
 export {
+  Pagination,
+  PaginationContent,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+  PaginationEllipsis,
+  paginationLinkVariants,
+} from "./pagination/pagination";
+export type {
+  PaginationLinkProps,
+  PaginationPreviousProps,
+  PaginationNextProps,
+} from "./pagination/pagination";
+export {
   Popover,
   PopoverTrigger,
   PopoverContent,
