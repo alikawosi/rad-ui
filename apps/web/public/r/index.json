@@ -184,6 +184,16 @@
     "registryDependencies": []
   },
   {
+    "name": "select",
+    "description": "Displays a list of options for the user to pick from",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-select",
+      "lucide-react"
+    ],
+    "registryDependencies": []
+  },
+  {
     "name": "sheet",
     "description": "Extends the Dialog component to display content that complements the main screen",
     "platform": "web",

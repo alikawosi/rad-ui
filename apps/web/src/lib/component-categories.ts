@@ -148,6 +148,13 @@ export const componentCategories: ComponentCategory[] = [
         icon: CircleDot,
         description: "گروه دکمه‌های رادیویی",
       },
+      {
+        name: "Select",
+        nameFA: "انتخابگر",
+        href: "/components/select",
+        icon: ChevronDown,
+        description: "نمایش لیست گزینه‌ها برای انتخاب کاربر",
+      },
     ],
   },
   {
