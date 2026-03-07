@@ -64,6 +64,18 @@
     "registryDependencies": []
   },
   {
+    "name": "alert-dialog",
+    "description": "A modal dialog that interrupts the user with important content and expects a response",
+    "platform": "web",
+    "dependencies": [
+      "@radix-ui/react-alert-dialog",
+      "class-variance-authority"
+    ],
+    "registryDependencies": [
+      "button"
+    ]
+  },
+  {
     "name": "dialog",
     "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert",
     "platform": "web",

@@ -78,6 +78,23 @@
       ]
     },
     {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "description": "A modal dialog that interrupts the user with important content and expects a response",
+      "platform": "web",
+      "dependencies": [
+        "@radix-ui/react-alert-dialog@^1.1.4",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": ["button"],
+      "files": [
+        {
+          "path": "registry/web/ui/alert-dialog/alert-dialog.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "dialog",
       "type": "registry:ui",
       "description": "A window overlaid on either the primary window or another dialog window, rendering the content underneath inert",

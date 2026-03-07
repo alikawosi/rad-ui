@@ -110,6 +110,20 @@ export {
 } from "./dialog/dialog";
 export type { DialogContentProps } from "./dialog/dialog";
 export {
+  AlertDialog,
+  AlertDialogPortal,
+  AlertDialogOverlay,
+  AlertDialogTrigger,
+  AlertDialogContent,
+  AlertDialogHeader,
+  AlertDialogFooter,
+  AlertDialogTitle,
+  AlertDialogDescription,
+  AlertDialogAction,
+  AlertDialogCancel,
+} from "./alert-dialog/alert-dialog";
+export type { AlertDialogContentProps } from "./alert-dialog/alert-dialog";
+export {
   Drawer,
   DrawerPortal,
   DrawerOverlay,
