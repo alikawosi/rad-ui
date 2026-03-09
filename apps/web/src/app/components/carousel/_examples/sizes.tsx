@@ -20,7 +20,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function SizesCarouselExample() {
   return (
-    <Carousel>
+    <Carousel className="w-full max-w-sm">
       <CarouselContent>
         <CarouselItem className="basis-1/3">
           <Card>
@@ -67,7 +67,7 @@ export default function SizesCarouselExample() {
 
 export default function SizesCarouselExample() {
   return (
-    <Carousel>
+    <Carousel className="w-full max-w-sm">
       <CarouselContent>
         <CarouselItem className="basis-1/3">
           <Card>
