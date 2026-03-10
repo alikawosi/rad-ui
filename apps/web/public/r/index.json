@@ -59,6 +59,18 @@
     ]
   },
   {
+    "name": "command",
+    "description": "Command menu for search and quick actions",
+    "platform": "web",
+    "dependencies": [
+      "cmdk",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "dialog"
+    ]
+  },
+  {
     "name": "chart",
     "description": "Chart components built on Recharts with tooltip and legend",
     "platform": "web",

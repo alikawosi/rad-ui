@@ -77,6 +77,23 @@
       ]
     },
     {
+      "name": "command",
+      "type": "registry:ui",
+      "description": "Command menu for search and quick actions",
+      "platform": "web",
+      "dependencies": [
+        "cmdk@^1.1.1",
+        "lucide-react@^0.309.0"
+      ],
+      "registryDependencies": ["dialog"],
+      "files": [
+        {
+          "path": "registry/web/ui/command/command.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    },
+    {
       "name": "chart",
       "type": "registry:ui",
       "description": "Chart components built on Recharts with tooltip and legend",

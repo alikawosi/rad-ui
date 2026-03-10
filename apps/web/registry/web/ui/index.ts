@@ -112,6 +112,17 @@ export type {
   NativeSelectOptGroupProps,
 } from "./native-select";
 export {
+  Command,
+  CommandInput,
+  CommandList,
+  CommandEmpty,
+  CommandGroup,
+  CommandItem,
+  CommandSeparator,
+  CommandShortcut,
+  CommandDialog,
+} from "./command/command";
+export {
   Card,
   cardVariants,
   CardHeader,

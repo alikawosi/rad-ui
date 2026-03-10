@@ -36,6 +36,7 @@ import {
   AlertTriangle,
   Info,
   Image,
+  Search,
   type LucideIcon,
 } from "lucide-react";
 
@@ -241,6 +242,13 @@ export const componentCategories: ComponentCategory[] = [
         href: "/components/pagination",
         icon: ChevronsLeftRight,
         description: "ناوبری بین صفحات با دکمه‌های قبلی، بعدی و شماره صفحه",
+      },
+      {
+        name: "Command",
+        nameFA: "دستور",
+        href: "/components/command",
+        icon: Search,
+        description: "منوی دستور برای جستجو و اقدامات سریع",
       },
       {
         name: "Dropdown Menu",
