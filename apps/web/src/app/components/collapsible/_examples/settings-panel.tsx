@@ -81,8 +81,17 @@ export default function CollapsibleSettingsPanel() {
             </CollapsibleContent>
           </FieldGroup>
           <CollapsibleTrigger asChild>
-            <Button variant="outline" size="icon">
-              {open ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
+            <Button
+              variant="outline"
+              size="sm"
+              className="aspect-square p-0"
+              aria-label={open ? "بستن تنظیمات پیشرفته" : "نمایش تنظیمات پیشرفته"}
+            >
+              {open ? (
+                <Minimize className="w-4 h-4" />
+              ) : (
+                <Maximize className="w-4 h-4" />
+              )}
             </Button>
           </CollapsibleTrigger>
         </Collapsible>
@@ -136,8 +145,17 @@ export default function CollapsibleSettingsPanel() {
             </CollapsibleContent>
           </FieldGroup>
           <CollapsibleTrigger asChild>
-            <Button variant="outline" size="icon">
-              {open ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
+            <Button
+              variant="outline"
+              size="sm"
+              className="aspect-square p-0"
+              aria-label={open ? "بستن تنظیمات پیشرفته" : "نمایش تنظیمات پیشرفته"}
+            >
+              {open ? (
+                <Minimize className="w-4 h-4" />
+              ) : (
+                <Maximize className="w-4 h-4" />
+              )}
             </Button>
           </CollapsibleTrigger>
         </Collapsible>
