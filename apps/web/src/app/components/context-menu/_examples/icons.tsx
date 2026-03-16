@@ -18,21 +18,21 @@ export default function IconsContextMenuExample() {
         کلیک راست با آیکون
       </ContextMenuTrigger>
       <ContextMenuContent>
-        <ContextMenuItem>
-          <User className="ms-2 h-4 w-4" />
-          پروفایل
+        <ContextMenuItem className="flex items-center gap-2">
+          <User className="h-4 w-4" />
+          <span>پروفایل</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <CreditCard className="ms-2 h-4 w-4" />
-          پرداخت
+        <ContextMenuItem className="flex items-center gap-2">
+          <CreditCard className="h-4 w-4" />
+          <span>پرداخت</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <Users className="ms-2 h-4 w-4" />
-          اعضای تیم
+        <ContextMenuItem className="flex items-center gap-2">
+          <Users className="h-4 w-4" />
+          <span>اعضای تیم</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <Settings className="ms-2 h-4 w-4" />
-          تنظیمات
+        <ContextMenuItem className="flex items-center gap-2">
+          <Settings className="h-4 w-4" />
+          <span>تنظیمات</span>
         </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
@@ -47,21 +47,21 @@ export default function IconsContextMenuExample() {
         کلیک راست با آیکون
       </ContextMenuTrigger>
       <ContextMenuContent>
-        <ContextMenuItem>
-          <User className="ms-2 h-4 w-4" />
-          پروفایل
+        <ContextMenuItem className="flex items-center gap-2">
+          <User className="h-4 w-4" />
+          <span>پروفایل</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <CreditCard className="ms-2 h-4 w-4" />
-          پرداخت
+        <ContextMenuItem className="flex items-center gap-2">
+          <CreditCard className="h-4 w-4" />
+          <span>پرداخت</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <Users className="ms-2 h-4 w-4" />
-          اعضای تیم
+        <ContextMenuItem className="flex items-center gap-2">
+          <Users className="h-4 w-4" />
+          <span>اعضای تیم</span>
         </ContextMenuItem>
-        <ContextMenuItem>
-          <Settings className="ms-2 h-4 w-4" />
-          تنظیمات
+        <ContextMenuItem className="flex items-center gap-2">
+          <Settings className="h-4 w-4" />
+          <span>تنظیمات</span>
         </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
