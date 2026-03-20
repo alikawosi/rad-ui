@@ -2,7 +2,11 @@
 
 import { InstallCodeBlock } from "@/components/docs/code-block";
 import { ComponentExample } from "@/components/docs/component-example";
-import { ApiReferenceSection, PropsTable, type PropDefinition } from "@/components/docs/props-table";
+import {
+  ApiReferenceSection,
+  PropsTable,
+  type PropDefinition,
+} from "@/components/docs/props-table";
 import BasicExample, { code as basicCode } from "./_examples/basic";
 import TypesExample, { code as typesCode } from "./_examples/types";
 import PositionExample, { code as positionCode } from "./_examples/position";
@@ -30,13 +34,17 @@ export default function SonnerPage() {
       <div className="mb-12">
         <h1 className="text-4xl font-bold mb-4">سونر</h1>
         <p className="text-lg text-muted-foreground">
-          نمایش Toast (اعلان‌های موقتی) با دکمه‌ها و پیام‌های متنی، شبیه الگوی shadcn/ui.
+          نمایش Toast (اعلان‌های موقتی) با دکمه‌ها و پیام‌های متنی، شبیه الگوی
+          shadcn/ui.
         </p>
       </div>
 
       <section className="mb-16">
         <h2 className="text-2xl font-semibold mb-6">نصب</h2>
-        <InstallCodeBlock code="npx @quark-lab/rad-ui add sonner" language="bash" />
+        <InstallCodeBlock
+          code="npx @quark-lab/rad-ui add sonner"
+          language="bash"
+        />
       </section>
 
       <section className="mb-16">
@@ -79,16 +87,19 @@ export default function SonnerPage() {
         <h2 className="text-2xl font-semibold mb-6">دسترسی‌پذیری</h2>
         <div className="space-y-4 text-muted-foreground">
           <div className="p-4 rounded-lg bg-card border border-border">
-            <h3 className="font-semibold text-foreground mb-2">ARIA و اعلام وضعیت</h3>
+            <h3 className="font-semibold text-foreground mb-2">
+              ARIA و اعلام وضعیت
+            </h3>
             <p>
-              Toast ها به‌صورت خودکار توسط Sonner مدیریت می‌شوند و معمولاً از role/aria-live
-              برای اعلام به کاربران صفحه‌خوان استفاده می‌کنند.
+              Toast ها به‌صورت خودکار توسط Sonner مدیریت می‌شوند و معمولاً از
+              role/aria-live برای اعلام به کاربران صفحه‌خوان استفاده می‌کنند.
             </p>
           </div>
           <div className="p-4 rounded-lg bg-card border border-border">
             <h3 className="font-semibold text-foreground mb-2">RTL</h3>
             <p>
-              کامپوننت Toaster در Rad UI به‌صورت پیش‌فرض `dir=&quot;rtl&quot;` دارد تا چینش و تعامل‌ها با جهت RTL هماهنگ باشد.
+              کامپوننت Toaster در Rad UI به‌صورت پیش‌فرض `dir=&quot;rtl&quot;`
+              دارد تا چینش و تعامل‌ها با جهت RTL هماهنگ باشد.
             </p>
           </div>
         </div>
@@ -100,14 +111,15 @@ export default function SonnerPage() {
           <div>
             <h3 className="font-semibold mb-3">یک Toaster در کل برنامه</h3>
             <p className="text-muted-foreground">
-              فقط یک بار Toaster را رندر کنید تا از تکرار و رفتارهای غیرمنتظره جلوگیری شود.
+              فقط یک بار Toaster را رندر کنید تا از تکرار و رفتارهای غیرمنتظره
+              جلوگیری شود.
             </p>
           </div>
           <div>
             <h3 className="font-semibold mb-3">استفاده در کلاینت</h3>
             <p className="text-muted-foreground">
-              چون Toast ها تعامل دارند، در Next.js بهتر است Component های فراخوانی `toast(...)` در
-              `use client` باشند.
+              چون Toast ها تعامل دارند، در Next.js بهتر است Component های
+              فراخوانی `toast(...)` در `use client` باشند.
             </p>
           </div>
         </div>
@@ -120,4 +132,3 @@ export default function SonnerPage() {
     </div>
   );
 }
-
